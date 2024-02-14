@@ -1,0 +1,19 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API application for AllSKi ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Platty114/allSkii.git"
+  },
+  "author": "James Platt, Morgan Chen, Shamis Ali, Michael Svoboda, Mufaro Mungoni, Tomas Kmet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Platty114/allSkii/issues"
+  },
+  "homepage": "https://github.com/Platty114/allSkii#readme"
+}
