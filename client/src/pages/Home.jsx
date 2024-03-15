@@ -1,10 +1,27 @@
 import React from 'react';
 
 function Home() {
-  return (
+  
+  
+    return (
     <div>
-      <h2>Home Page</h2>
-      {/* Add content for Home page */}
+      <head>
+        <h1>Helllllloooo</h1>
+      </head>
+
+
+      <body className='body'>
+        
+        <input ></input>
+        
+
+      </body>
+
+
+      <footer>
+
+
+      </footer>
     </div>
   );
 }

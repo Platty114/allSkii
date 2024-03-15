@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import Trails from './pages/Trails';
@@ -10,19 +10,19 @@ import Topbar from './components/Topbar';
 
 function App() {
   return (
-    <Router>
-      <div>
+    <div>
+      <Router>
         <Topbar />
         <Routes>
-          <Route path="/" exact component={Login} />
-          <Route path="/home" component={Home} />
-          <Route path="/trails" component={Trails} />
-          <Route path="/reviews" component={Reviews} />
-          <Route path="/blogs" component={Blogs} />
-          <Route path="/events" component={Events} />
+          <Route path="/" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/trails" element={<Trails />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/events" element={<Events />} />
         </Routes>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

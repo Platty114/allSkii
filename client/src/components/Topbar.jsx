@@ -55,7 +55,7 @@ const Topbar = () => {
           </Link>
         ))}
       </div>
-
+      
       {/* Add additional buttons such as settings and user profile */}
       <Link
         to="/profile"
