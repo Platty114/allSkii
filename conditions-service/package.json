@@ -1,0 +1,29 @@
+{
+  "name": "conditions-service",
+  "version": "1.0.0",
+  "description": "Microservice for AllSkii application, that provides weather and conditions for a ski hill",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Platty114/allSkii.git#main"
+  },
+  "author": "James Platt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Platty114/allSkii/issues"
+  },
+  "homepage": "https://github.com/Platty114/allSkii/tree/main#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
