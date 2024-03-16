@@ -1,32 +1,3 @@
-// import React from 'react';
-// import "./Home.css";
-// import background from '../media/Background.png';
-// function Home() {
-  
-  
-//     return (
-//     <div className='content'>
-//       <div className="top">
-
-       
-        
-//       </div>
-
-
-    
-//         <div className='bottom'>
-
-
-//         </div>
-        
-
-
-      
-//     </div>
-//   );
-// }
-
-// export default Home;
 import React from 'react';
 import "./Home.css";
 import background from '../media/Background.png';
