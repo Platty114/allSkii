@@ -5,6 +5,7 @@ function Events() {
     <div>
       <h2>Events Page</h2>
       {/* Add content for Events page */}
+      
     </div>
   );
 }
