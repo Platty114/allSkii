@@ -16,7 +16,8 @@ const
     app = express(),
     port = process.env.PORT,
     apiKey = process.env.API_KEY,
-    baseUrl = process.env.BASE_URL;
+    baseUrl = process.env.BASE_URL,
+    verifyUrl = process.env.VERIFICATION_URL;
 
 
 app.use(express.json());
@@ -69,28 +70,57 @@ const
 //only need to return data based on latitude and longitude
 app
     .get("/:lat/:long", async (req, res) => {
-        //Grab openWeather data using axios 
-        try{
-            const 
-                latitude = Number(
-                    req.params.lat
-                ),
-                longitude = Number(
-                    req.params.long
-                ),
-                response = await getWeatherInformation(
-                    latitude,
-                    longitude
-                );
+        //verify that user making request is signed in 
+        const
+            user = await(async () => { 
+                try{
+                    return await axios.post(
+                        verifyUrl,
+                        req
+                    ) 
+                }
+                catch(err){
+                    return { status: 500}
+                }
+            })();
 
-            res.status(200).json(response);
-        }
-        catch(err){
-            console.log(err);
-            res.status(500).json({});
-        }
-        
+        //auth correctly
+        if(
+            user.status === 200
+        ){
+            //Grab openWeather data using axios 
+            try{
+                const 
+                    latitude = Number(
+                        req.params.lat
+                    ),
+                    longitude = Number(
+                        req.params.long
+                    ),
+                    response = await getWeatherInformation(
+                        latitude,
+                        longitude
+                    );
 
+                res.status(200).json(response);
+            }
+            catch(err){
+                console.log(err);
+                res.status(500).json({});
+            }
+        }
+        //auth service failure
+        else if (user.status === 500){
+            res.status(500).json({
+                error: "Internal service error"
+            });
+        }
+        //un authed
+        else{
+            res.status(401).json({
+                error: "unauthenticated user"
+            });
+        }
   });
 
 
