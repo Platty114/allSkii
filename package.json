@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "mapbox-gl": "^3.2.0"
+  }
+}

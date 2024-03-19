@@ -1,4 +1,5 @@
 import React from 'react';
+import MapboxSkiRuns from '../components/Map';
 
 function Trails() {
   return (
@@ -8,9 +9,8 @@ function Trails() {
 
     </head>
 
-
     <body className='body'>
-      
+      <MapboxSkiRuns />
       <p></p>
       
 
