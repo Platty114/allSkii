@@ -1,5 +1,3 @@
 API/registerService/node_modules
 client/node_modules/
-conditions-service/node_modules
-auth-service/node_modules
-geoJson-service/node_modules
+node_modules/
