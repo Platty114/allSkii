@@ -15,33 +15,85 @@ dotenv.config();
 const
     app = express(),
     port = process.env.PORT,
-    apiKey = process.env.API_KEY;
+    apiKey = process.env.API_KEY,
+    baseUrl = process.env.BASE_URL;
 
 
 app.use(express.json());
     
 
+
 const
-    getWeatherInformation = async () => {
+    getWeatherInformation = async (latitude, longitude) => {
+    //helper function that makes a call to openWeather api, and then
+    //formats the returned information.
         try {
-             
+           const
+                requrestUrl = `${baseUrl}/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`,
+                response = await (async () => {
+                    const 
+                        original = await axios.get(
+                            requrestUrl
+                        ),
+                        modifiedResponse = {};
+
+                    modifiedResponse.lat = latitude;
+                    modifiedResponse.long = longitude;
+                    modifiedResponse.temp = original.data.main.temp;
+                    modifiedResponse.feelsLike = original.data.main.feels_like;
+                    modifiedResponse.description = original.data.weather.description;
+                    modifiedResponse.visibility = original.data.visibility;
+                    modifiedResponse.wind = original.data.wind.speed;
+                    modifiedResponse.cloudCoverage = original.data.clouds.all + "%";
+                    modifiedResponse.lastHourSnow = (original.data.snow) 
+                        ? original.data.snow["1h"]
+                        : 0
+                    modifiedResponse.last3HourSnow = (original.data.snow) 
+                        ? original.data.snow["3h"]
+                        : 0
+                    
+                    return  modifiedResponse;
+                })();
+
+            return response;
         }
         catch (err) {
+            console.log(err);
             console.log("Error retrieving weather data")
+
+            return {error : "There was an error on openWeathers end."};
         }
     };
 
 
 //only need to return data based on latitude and longitude
 app
-  .get("/:lat/:long", (req, res) => {
+    .get("/:lat/:long", async (req, res) => {
+        //Grab openWeather data using axios 
+        try{
+            const 
+                latitude = Number(
+                    req.params.lat
+                ),
+                longitude = Number(
+                    req.params.long
+                ),
+                response = await getWeatherInformation(
+                    latitude,
+                    longitude
+                );
 
-      //Grab openWeather data using axios
-       
-      
+            res.status(200).json(response);
+        }
+        catch(err){
+            console.log(err);
+            res.status(500).json({});
+        }
+        
 
   });
 
 
 //listen
 app.listen(port);
+console.log("listening on port" + port);

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Microservice for AllSkii application, that provides weather and conditions for a ski hill",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "devStart": "nodemon server.js",
     "start": "node server.js",
