@@ -69,3 +69,81 @@
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   }
   
+  .map-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .map-container-left {
+    flex: 0 0 750px;
+  }
+  
+  .map-container-right {
+    flex: 1 0 300px;
+    margin-top: 60px;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(34, 34, 34); /* Add background color for visibility */
+  }
+  
+  .right-footer {
+    height: 60px;
+    background-color: #ffffff;
+    text-align: center;
+    transform: translateY(10px); /* Translate the footer down by 20 pixels */
+  }
+
+  .map-content-container {
+    margin-top: 60px;
+    margin: 40px;
+    margin-right: 40px;
+    height: 571px;
+    background-color: #ffffff;
+  }
+
+  .back-button {
+    cursor: pointer;
+  }
+
+  .Menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .Review {
+    margin-right: 40px;
+    cursor: pointer;
+  }
+
+  .OverView {
+    cursor: pointer;
+    margin-left: 40px;
+  }
+
+  .cover-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Trail-Menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+    margin-bottom: 5px;
+  }
+
+  .Trail {
+    cursor: pointer;
+    font-size: 10px;
+    margin-top: 5px;
+  }
