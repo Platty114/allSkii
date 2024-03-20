@@ -15,7 +15,8 @@ import bigWhiteImage from "../media/bigWhite.png"
 import * as turf from '@turf/turf';
 
 
-const MapboxSkiRuns = () => {
+const MapboxSkiRuns = ({ onCoordinatesChange, hideText, onMapLoad, highlightLegacy }) => {
+ 
   useEffect(() => {
     mapboxgl.accessToken =
       "pk.eyJ1IjoibWljaGFlbC1zdm9ib2RhIiwiYSI6ImNsZWd0bHQ0MzBhYWEzcXBoMzQ0bnF5djgifQ.17y-XKuBkorntWJCXiEWRw";
@@ -23,7 +24,7 @@ const MapboxSkiRuns = () => {
     const map = new mapboxgl.Map({
       container: "map",
       style: "mapbox://styles/mapbox/satellite-streets-v12",
-      center: [-115, 51], // Adjust the center to focus on Alberta or your desired location
+      center: [-116.828430, 50.605912], // Adjust the center to focus on Alberta or your desired location
       zoom: 6,
       pitch: 45
     });
@@ -77,11 +78,17 @@ const MapboxSkiRuns = () => {
           // Display the message or handle the click event as needed
           //zoom
           zoom(coordinates, bearing);
+          // Set the coordinates in the parent component
+          onCoordinatesChange(coordinates);
+          hideText(true);
+
         });
       });
     }
 
     map.on("load", async () => {
+      onMapLoad(map);
+
       // Replace the 'data.geojson' with the path to your generated GeoJSON file
       map.addSource("skiRuns", {
         type: "geojson",
@@ -167,20 +174,50 @@ const MapboxSkiRuns = () => {
         }
       };
 
-      const pinRoute = geojsonData.geometry.coordinates.reverse();
-      const popup = new mapboxgl.Popup({ closeButton: false }).setHTML('<h3>Popup Content</h3>');
-      const marker = new mapboxgl.Marker({
-        color: 'red',
-        scale: 1.8,
-        draggable: false,
-        pitchAlignment: 'auto',
-        rotationAlignment: 'auto'
-    })
-        marker.setLngLat([-116.143883,51.449265])
-        marker.setPopup(popup)
-        marker.addTo(map)
-        marker.togglePopup();
+      //mock data
+  const Legacy = {
+    "type": "Feature",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -115.175208,
+          50.945534
+        ],
+        [
+          -115.174549,
+          50.945173
+        ],
+        [
+          -115.173549,
+          50.944204
+        ],
+        [
+          -115.173041,
+          50.944014
+        ],
+        [
+          -115.17172,
+          50.943945
+        ],
+        [
+          -115.169572,
+          50.943686
+        ],
+        [
+          -115.167154,
+          50.9432
+        ]
+      ]
+    },
+    "properties": {
+      "name": "Legacy",
+      "piste:difficulty": "advanced",
+      "piste:type": "downhill"
+    }
+  }
 
+      const pinRoute = geojsonData.geometry.coordinates.reverse();
       // Add a source and layer displaying a point which will be used to highlight the route
       map.addSource('line', {
         type: 'geojson',
@@ -201,7 +238,7 @@ const MapboxSkiRuns = () => {
         }
       });
 
-      const animationDuration = 20000;
+      const animationDuration = 2000;
       const path = turf.lineString(pinRoute);
       const pathDistance = turf.lineDistance(path);
       let start;
@@ -224,9 +261,7 @@ const MapboxSkiRuns = () => {
           map.queryTerrainElevation(lngLat, { exaggerated: false })
         );
         
-        // Update the popup altitude value and marker location
-        popup.setHTML('Altitude: ' + elevation + 'm<br/>');
-        marker.setLngLat(lngLat);
+
         map.setPaintProperty('line', 'line-gradient', [
           'step',
           ['line-progress'],
@@ -309,7 +344,7 @@ const MapboxSkiRuns = () => {
   return (
     <div
       id="map"
-      style={{ position: "absolute", top: 0, bottom: 0, width: "100%" }}
+      style={{ position: "absolute", top: 0, bottom: 0, width:"750px", height: "661px", marginTop: "60px" }}
     />
   );
 };
