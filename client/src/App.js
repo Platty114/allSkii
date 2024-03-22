@@ -7,22 +7,20 @@ import Reviews from './pages/Reviews';
 import Blogs from './pages/Blogs';
 import Events from './pages/Events';
 import Topbar from './components/Topbar';
+import LoginValid from './pages/LoginValid';
+import { AuthProvider, useAuth } from './pages/AuthContext';
 
 function App() {
+  const isLoggedIn = false;
+ 
   return (
-    <div>
-      <Router>
-        <Topbar />
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/trails" element={<Trails />} />
-          <Route path="/reviews" element={<Reviews />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/events" element={<Events />} />
-        </Routes>
-      </Router>
-    </div>
+  <AuthProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+      </Routes>
+    </Router>
+  </AuthProvider>
   );
 }
 
