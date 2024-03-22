@@ -19,15 +19,14 @@ app.post('/create', async (req, res) => {
     try {
         console.log(req.body);
         // const id = req.body.id;
-        const eventJson = {
-            date: req.body.date,
-            hill: req.body.hill,
+        const reviewJson = {
+            rating: req.body.date,
+            comments: req.body.hill,
             category: req.body.category,
             name: req.body.name,
-            difficulty: req.body.difficulty,
-            pricing: req.body.pricing
+            skiHill: req.body.skiHill
         };
-        const response = await db.collection('Events').add(eventJson);
+        const response = await db.collection('Reviews').add(reviewJson);
         res.send(response);
     } catch (error) {
         console.log(error);
@@ -35,11 +34,13 @@ app.post('/create', async (req, res) => {
     }
 });
 
+// review rating, comment, category - ski runs, food, accommodation, name of thing (is it a ski run, food place etc), ski hill
+
 // get all entries
 app.get("/read/all", async (req, res) => {
     try {
-        const eventsRef = db.collection('Events');
-        const response = await eventsRef.get();
+        const reviewsRef = db.collection('Reviews');
+        const response = await reviewsRef.get();
         let responseArray = [];
         response.forEach(document => {
             responseArray.push(document.data());
@@ -53,8 +54,8 @@ app.get("/read/all", async (req, res) => {
 // get one entry
 app.get("/read/:id", async (req, res) => {
     try {
-        const eventsRef = db.collection('Events').doc(req.params.id);
-        const response = await eventsRef.get();
+        const reviewsRef = db.collection('Reviews').doc(req.params.id);
+        const response = await reviewsRef.get();
         res.send(response.data());
     } catch (error) {
         res.send(error);
@@ -67,11 +68,11 @@ app.post('/update', async (req, res) => {
     try {
         const id = req.body.id;
         const newHill = "Nakiska";
-        const eventsRef = await db.collection('Events').doc(id)
+        const reviewsRef = await db.collection('Reviews').doc(id)
         .update({
-            hill: newHill
+            skiHill: newHill
         });
-        res.send(eventsRef);
+        res.send(reviewsRef);
     } catch(error) {
         res.send(error);
     }
@@ -80,7 +81,7 @@ app.post('/update', async (req, res) => {
 // delete entry
 app.delete('/delete/:id', async (req, res) => {
     try {
-        const response = await db.collection('Events').doc(req.params.id).delete();
+        const response = await db.collection('Reviews').doc(req.params.id).delete();
         res.send(response);
     } catch(error) {
         res.send(error);
