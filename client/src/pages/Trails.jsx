@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
 import MapboxSkiRuns from '../components/Map';
-import NakiskaTrails from '../components/RenderAPI';
 import lakeLouiseImage from '../media/LakeLouisePhoto.png';
 import nakiskaImage from '../media/NakiskaPhoto.png';
 import RenderAPI from '../components/RenderAPI';
 import DownhillSkiingIcon from '@mui/icons-material/DownhillSkiing';
+import MouseIcon from '@mui/icons-material/Mouse';
+import feather from 'feather-icons';
+
 
 
   
@@ -160,6 +162,10 @@ function Trails() {
   };
 
   const coordinatesTrail = coordinates ? checkCoordinatesTrail(coordinates) : '';
+  const arrowRightIcon = feather.icons['mouse-pointer'].toSvg();
+  const rotateIcon = feather.icons['refresh-cw'].toSvg();
+  const maximizeIcon = feather.icons['maximize-2'].toSvg();
+  const moveIcon = feather.icons['move'].toSvg();
 
 
   return (
@@ -176,10 +182,29 @@ function Trails() {
         <div className='map-container-right'>
           <div className='map-content-container'>
 
-              {!hideText && (      <div className="title-container">
-        <DownhillSkiingIcon className="ski-icon" />
+              {!hideText && (
+                <div className='info-container'>
+                      <div className="title-container">
+        <DownhillSkiingIcon style={{ marginTop: '60px', marginLeft: '40px', marginRight: '10px', fontSize: '5rem', color: '#ffffff'}} />
         <span className="title-default">AllSkii Trail Explorer</span>
-      </div>)}
+      </div>
+      <div className="col1"><div dangerouslySetInnerHTML={{ __html: arrowRightIcon }} style={{ marginTop: '20px', marginLeft: '60px', marginRight: '20px', fontSize: '60px', color: '#ffffff'}} />
+      <div className="text1">Left click on a ski resort to view trails and reviews</div>
+      </div>
+      <div className="col1"><div dangerouslySetInnerHTML={{ __html: rotateIcon }} style={{ marginTop: '20px', marginLeft: '60px', marginRight: '20px', fontSize: '60px', color: '#ffffff'}} />
+      <div className="text1">Rotate the map by pressing the right click button while moving the mouse</div>
+      </div>
+      <div className="col1"><div dangerouslySetInnerHTML={{ __html: maximizeIcon }} style={{ marginTop: '20px', marginLeft: '60px', marginRight: '20px', fontSize: '60px', color: '#ffffff'}} />
+      <div className="text1">Scroll to zoom in or out of the map</div>
+      </div>
+      <div className="col1"><div dangerouslySetInnerHTML={{ __html: moveIcon }} style={{ marginTop: '20px', marginLeft: '60px', marginRight: '20px', fontSize: '60px', color: '#ffffff'}} />
+      <div className="text1">Pan the map by pressing the left click button while moving the mouse</div>
+      </div>
+      
+
+      </div>
+
+      )}
               {hideText && coordinates && (<div>{coordinatesCase}
               <div className='Menu'>
                 <div className={'OverView' + (hideText && view ? ' active' : '')} onClick={changeView}>OverView</div>

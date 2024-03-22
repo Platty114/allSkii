@@ -140,7 +140,7 @@
     color: #b3daff
   }
   .Review.active {
-    margin-right: 40px;
+    margin-right: 60px;
     cursor: pointer;
     color: #b3daff
     
@@ -167,7 +167,7 @@
 
   .Trail {
     cursor: pointer;
-    font-size: 10px;
+    font-size: 15px;
     margin-top: 5px;
     color: #ffffff;
     padding-left: 20px;
@@ -175,7 +175,7 @@
   }
   .Trail.active {
     cursor: pointer;
-    font-size: 10px;
+    font-size: 15px;
     color: #b3daff;
     margin-top: 5px;
   }
@@ -191,17 +191,65 @@
   .title-container {
     display: flex;
     align-items: center;  
+    animation: slideLeft 1s ease-out;
   }
-
-.ski-icon {
-  font-size: 2rem;
-  color: #ffffff;
-  margin-right: 10px;
-}
 
 .title-default {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   color: #ffffff;
+  margin-top: 50px;
 }
 
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes slideLeftt {
+  from {
+    transform: translateY(-100%);
+    visibility: hidden;
+  }
+  to {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.col1 {
+  display: flex;
+  flex-direction: row;
+  animation: slideLeftt 1s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+.col1:nth-child(3) {
+  animation-delay: 2s; 
+}
+
+.col1:nth-child(4) {
+  animation-delay: 3s; 
+}
+
+.col1:nth-child(5) {
+  animation-delay: 4s; 
+}
+
+
+.text1 {
+  margin-top: 50px;
+  margin-right: 20px;
+  font-size: 15px;
+  color: #ffffff;
+}
