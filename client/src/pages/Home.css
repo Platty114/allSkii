@@ -73,6 +73,7 @@
     display: flex;
     height: 100vh;
     width: 100%;
+    background-color: rgb(34, 34, 34);
   }
   
   .map-container-left {
@@ -81,10 +82,9 @@
   
   .map-container-right {
     flex: 1 0 300px;
-    margin-top: 60px;
     align-items: center;
     flex-direction: column;
-
+    height: 100vh;
     background-color: rgb(34, 34, 34); /* Add background color for visibility */
   }
   
@@ -96,15 +96,22 @@
   }
 
   .map-content-container {
-    margin-top: 60px;
+    margin-top: 120px;
     margin: 40px;
     margin-right: 40px;
     height: 571px;
-    background-color: #ffffff;
+    background-color: #2a2a2a;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    transform: translateY(40px);
   }
 
   .back-button {
     cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px
   }
 
   .Menu {
@@ -112,18 +119,31 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #ffffff;
   }
 
   .Review {
-    margin-right: 40px;
+    margin-right: 60px;
     cursor: pointer;
+    color: #ffffff
+    
   }
 
   .OverView {
     cursor: pointer;
     margin-left: 40px;
+    color: #ffffff
+  }
+  .OverView.active {
+    cursor: pointer;
+    margin-left: 40px;
+    color: #b3daff
+  }
+  .Review.active {
+    margin-right: 40px;
+    cursor: pointer;
+    color: #b3daff
+    
   }
 
   .cover-content {
@@ -136,14 +156,52 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 22.5px;
     margin-right: 22.5px;
     margin-bottom: 5px;
+    height: 180px;
+    overflow-y: auto;
+    box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
   }
 
   .Trail {
     cursor: pointer;
     font-size: 10px;
     margin-top: 5px;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
   }
+  .Trail.active {
+    cursor: pointer;
+    font-size: 10px;
+    color: #b3daff;
+    margin-top: 5px;
+  }
+
+  .hillTitle {
+    font-size: 25px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: #ffffff;
+  }
+
+  .title-container {
+    display: flex;
+    align-items: center;  
+  }
+
+.ski-icon {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.title-default {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+}
+
