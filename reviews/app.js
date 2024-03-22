@@ -20,11 +20,11 @@ app.post('/create', async (req, res) => {
         console.log(req.body);
         // const id = req.body.id;
         const reviewJson = {
-            rating: req.body.date,
-            comments: req.body.hill,
-            category: req.body.category,
             name: req.body.name,
-            skiHill: req.body.skiHill
+            category: req.body.category,
+            skiHill: req.body.skiHill,
+            rating: req.body.rating,
+            comments: req.body.comments
         };
         const response = await db.collection('Reviews').add(reviewJson);
         res.send(response);
@@ -67,7 +67,7 @@ app.get("/read/:id", async (req, res) => {
 app.post('/update', async (req, res) => {
     try {
         const id = req.body.id;
-        const newHill = "Nakiska";
+        const newHill = "Whistler Blackcomb";
         const reviewsRef = await db.collection('Reviews').doc(id)
         .update({
             skiHill: newHill
