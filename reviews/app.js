@@ -20,7 +20,8 @@ app.post('/create', async (req, res) => {
         console.log(req.body);
         // const id = req.body.id;
         const reviewJson = {
-            name: req.body.name,
+            user: req.body.user,
+            placeName: req.body.placeName,
             category: req.body.category,
             skiHill: req.body.skiHill,
             rating: req.body.rating,
