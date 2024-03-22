@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@turf/turf": "^6.5.0",
+    "feather-icons": "^4.29.1",
     "mapbox-gl": "^3.2.0"
   }
 }
