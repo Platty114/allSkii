@@ -69,3 +69,187 @@
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   }
   
+  .map-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+  }
+  
+  .map-container-left {
+    flex: 0 0 750px;
+  }
+  
+  .map-container-right {
+    flex: 1 0 300px;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(34, 34, 34); /* Add background color for visibility */
+  }
+  
+  .right-footer {
+    height: 60px;
+    background-color: #ffffff;
+    text-align: center;
+    transform: translateY(10px); /* Translate the footer down by 20 pixels */
+  }
+
+  .map-content-container {
+    margin-top: 120px;
+    margin: 40px;
+    margin-right: 40px;
+    height: 571px;
+    background-color: #2a2a2a;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    transform: translateY(40px);
+  }
+
+  .back-button {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px
+  }
+
+  .Menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .Review {
+    margin-right: 60px;
+    cursor: pointer;
+    color: #ffffff
+    
+  }
+
+  .OverView {
+    cursor: pointer;
+    margin-left: 40px;
+    color: #ffffff
+  }
+  .OverView.active {
+    cursor: pointer;
+    margin-left: 40px;
+    color: #b3daff
+  }
+  .Review.active {
+    margin-right: 60px;
+    cursor: pointer;
+    color: #b3daff
+    
+  }
+
+  .cover-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Trail-Menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+    margin-bottom: 5px;
+    height: 180px;
+    overflow-y: auto;
+    box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  }
+
+  .Trail {
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 5px;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .Trail.active {
+    cursor: pointer;
+    font-size: 15px;
+    color: #b3daff;
+    margin-top: 5px;
+  }
+
+  .hillTitle {
+    font-size: 25px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: #ffffff;
+  }
+
+  .title-container {
+    display: flex;
+    align-items: center;  
+    animation: slideLeft 1s ease-out;
+  }
+
+.title-default {
+  font-weight: bold;
+  font-size: 30px;
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes slideLeftt {
+  from {
+    transform: translateY(-100%);
+    visibility: hidden;
+  }
+  to {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.col1 {
+  display: flex;
+  flex-direction: row;
+  animation: slideLeftt 1s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+.col1:nth-child(3) {
+  animation-delay: 2s; 
+}
+
+.col1:nth-child(4) {
+  animation-delay: 3s; 
+}
+
+.col1:nth-child(5) {
+  animation-delay: 4s; 
+}
+
+
+.text1 {
+  margin-top: 50px;
+  margin-right: 20px;
+  font-size: 15px;
+  color: #ffffff;
+}
