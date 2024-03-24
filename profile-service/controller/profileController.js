@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
 import axios from "axios";
+import bcrypt from "bcrypt";
 
 import { db } from "../db/firebase.js";
 
@@ -26,8 +27,8 @@ const
 
 
 const
-    getProfile = async (user, req, res) => {
-        const userEmail = req.params.email == null ? "" : req.params.email;
+    getProfile = async (req, res) => {
+        const userEmail = req.params.email === null ? "" : req.params.email;
         const 
             userRef = db.collection('Users').doc(userEmail),
             doc = await userRef.get();
@@ -50,12 +51,12 @@ const
     };
 
 const
-    updateName = async (user, req, res) => {
+    updateName = async (req, res) => {
         //grab user if it exists, and then update it 
         const 
-            userEmail = req.body.email == null ? "" : req.body.email, //error handling
-            firstName = req.body.email == null ? "" : req.body.firstName,
-            lastName = req.body.email == null ? "" : req.body.lastName;
+            userEmail = req.body.email === null ? "" : req.body.email, //error handling
+            firstName = req.body.email === null ? "" : req.body.firstName,
+            lastName = req.body.email === null ? "" : req.body.lastName;
 
         const 
             userRef = db.collection('Users').doc(userEmail);
@@ -77,8 +78,39 @@ const
 
     };
 
+const
+    updatePassword = async (req, res) => {
+         //grab user if it exists, and then update it 
+        const 
+            userEmail = req.body.email === null ? "" : req.body.email, //error handling
+            userPassword = req.body.password;
+        const 
+            userRef = db.collection('Users').doc(userEmail);
+            const doc = await userRef.get();
+        if(
+            doc.exists
+            &&
+            userPassword !== null
+        ){
+            const hash = bcrypt.hashSync(userPassword, 10);
+            
+            //format data and send
+            await userRef.update({
+                password: hash
+            })
+
+            res.status(200).json({ success: "true"});
+        } 
+        else {
+            //email dosen't exist so send error
+            res.status(400).json({error: "invalid email"});
+        }
+
+    };
+
 export {
     getProfile,
     updateName,
+    updatePassword,
     authenticate
 }

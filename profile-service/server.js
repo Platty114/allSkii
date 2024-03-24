@@ -4,7 +4,8 @@ import cors from "cors";
 import { 
     authenticate, 
     getProfile, 
-    updateName
+    updateName,
+    updatePassword
 } from "./controller/profileController.js"
 
 
@@ -29,15 +30,15 @@ app.get("/profile/:email", async (req, res) => {
     //pass user, req and res to controller
     //make sure user is verified
     if(user.status === 200){
-        await getProfile(user, req, res);
+        await getProfile(req, res);
     }
     else{
         res.status(200).json({error: "usernotauthed"});
     }
 });
 
-
-app.put("/firstNameLast", async (req, res) => {
+//update a user accounts first and lastname
+app.put("/updateNames", async (req, res) => {
     //verify that request is authenticated
     const
         user = await authenticate(req);
@@ -45,12 +46,28 @@ app.put("/firstNameLast", async (req, res) => {
     //pass user, req and res to controller
     //make sure user is verified
     if(user.status === 200){
-        await updateName(user, req, res);
+        await updateName(req, res);
     }
     else{
         res.status(200).json({error: "usernotauthed"});
     }
 });
+
+//update a user accounts password
+app.put("/updatePassword", async (req, res) => {
+    //verify that request is authenticated
+    const
+        user = await authenticate(req);
+    
+    //pass user, req and res to controller
+    //make sure user is verified
+    if(user.status === 200){
+        await updatePassword(req, res);
+    }
+    else{
+        res.status(200).json({error: "usernotauthed"});
+    }
+})
 
 
 
