@@ -62,7 +62,6 @@ function Trails() {
   const handleSelectedTrail = (trail) => {
     const trialName = trail.properties.name;
     setSelectedTrail(trialName);
-    //window.alert('Trail selected');
     if (map){
       if (prevTrail === trialName){
         setCurrentTrail(trialName);
@@ -85,8 +84,7 @@ function Trails() {
           },
           paint: {
             'line-color': '#ff0000',
-            'line-width': 8,
-            'line-opacity': 0.5
+            'line-width': 9,
           }
         });
         setPrevTrail(trialName);
@@ -111,8 +109,7 @@ function Trails() {
           },
           paint: {
             'line-color': '#ff0000',
-            'line-width': 8,
-            'line-opacity': 0.5
+            'line-width': 9,
           }
         });
         setPrevTrail(trialName);
@@ -147,7 +144,8 @@ function Trails() {
   const checkCoordinatesTrail = (coords) => {
     if (JSON.stringify(coords) === JSON.stringify([-115.1511,50.9427])) {
       return (
-        <RenderAPI selectedTrail={selectedTrail} handleSelectedTrail={handleSelectedTrail}/>
+        <RenderAPI selectedTrail={selectedTrail} handleSelectedTrail={handleSelectedTrail} map={map}
+        />
       );
     } else if (JSON.stringify(coords) === JSON.stringify([-116.1622,51.4419])) {
       return (
