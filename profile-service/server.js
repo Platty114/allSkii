@@ -1,6 +1,11 @@
 import express from "express";
 import dotenv from "dotenv";
-import { authenticate, getProfile } from "./controller/profileController.js"
+import cors from "cors";
+import { 
+    authenticate, 
+    getProfile, 
+    updateName
+} from "./controller/profileController.js"
 
 
 dotenv.config()
@@ -10,19 +15,44 @@ const app = express();
 
 
 app.use(express.json());
-
+app.use(cors());
 
 
 //get profile info
-app.get("/profileInfo", async (req, res) => {
-    
+//requies users email in body
+// { email: example@gmail.com }
+app.get("/profile/:email", async (req, res) => {
     //verify that request is authenticated
     const
         user = await authenticate(req);
     
     //pass user, req and res to controller
-    getProfile(user, req, res);
+    //make sure user is verified
+    if(user.status === 200){
+        await getProfile(user, req, res);
+    }
+    else{
+        res.status(200).json({error: "usernotauthed"});
+    }
 });
+
+
+app.put("/firstNameLast", async (req, res) => {
+    //verify that request is authenticated
+    const
+        user = await authenticate(req);
+    
+    //pass user, req and res to controller
+    //make sure user is verified
+    if(user.status === 200){
+        await updateName(user, req, res);
+    }
+    else{
+        res.status(200).json({error: "usernotauthed"});
+    }
+});
+
+
 
 
 app.listen(port, () => {

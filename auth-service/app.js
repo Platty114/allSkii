@@ -23,14 +23,24 @@ app.use(cookieParser());
 const jwtKey = 'ashdh3872dunqsudn2eh313';
 
 app.post('/signup', async (request, response) => {
-        const {email, password} = request.body;
+        const 
+            email = request.body.email,
+            password = request.body.password,
+            firstName = request.body.firstName,
+            lastName = request.body.lastName;
+
         const hash = bcrypt.hashSync(password, 10);
         const db = getFirestore();
         const userRef = db.collection('Users').doc(email);
         const doc = await userRef.get();
         const expiresIn = 60 * 60 * 24 * 7 * 1000;
         if (!doc.exists) {
-            await userRef.set({username: email, password: hash});
+            await userRef.set({
+                username: email, 
+                password: hash,
+                firstName: firstName,
+                lastName: lastName
+            });
             const token = jsonWt.sign({email: email}, jwtKey, {expiresIn: expiresIn});
             response.cookie('sessionToken', token)
             response.status(200).send({
