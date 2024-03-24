@@ -84,8 +84,7 @@ function Trails() {
           },
           paint: {
             'line-color': '#ff0000',
-            'line-width': 8,
-            'line-opacity': 0.5
+            'line-width': 9,
           }
         });
         setPrevTrail(trialName);
@@ -110,8 +109,7 @@ function Trails() {
           },
           paint: {
             'line-color': '#ff0000',
-            'line-width': 8,
-            'line-opacity': 0.5
+            'line-width': 9,
           }
         });
         setPrevTrail(trialName);

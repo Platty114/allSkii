@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import geoJsonData from "./ski_run_hill_relation.json" assert { type: 'json' }
+import cors from "cors";
 
 //using dotenv parameters
 dotenv.config();
@@ -14,6 +15,8 @@ const ski_hill_relation = geoJsonData.features;
 
 
 app.use(express.json());
+app.use(cors()); // Use cors middleware to enable CORS
+
     
 //only need to return data based on latitude and longitude
 app
@@ -81,7 +84,7 @@ app
             //send geoJsonData to client
             
             const response = {
-                type: geoJsonData.Type,
+                type: geoJsonData.type,
                 features: (geoJsonData.features).filter((item) => {
                     //console.log(item.properties.ski_hill);
                     if(
