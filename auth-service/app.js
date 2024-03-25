@@ -3,12 +3,10 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt');
 const jsonWt = require('jsonwebtoken');
+const cors = require('cors');
 const {getFirestore} = require('firebase-admin/firestore');
-
 const admin = require("firebase-admin");
-
 const serviceAccount = require("./allskii-ecd4d-firebase-adminsdk-9lzcg-7efc3136c5.json");
-const e = require("express");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
@@ -19,6 +17,8 @@ const port = process.env.PORT || 2345;
 
 app.use(bodyParser.json());
 app.use(cookieParser());
+//add cors secuirty stuff
+app.use(cors());
 
 const jwtKey = 'ashdh3872dunqsudn2eh313';
 
