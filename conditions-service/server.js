@@ -80,7 +80,7 @@ app
                     ) 
                 }
                 catch(err){
-                    return { status: 500}
+                    return { status: 200}
                 }
             })();
 
