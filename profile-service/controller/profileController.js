@@ -11,8 +11,9 @@ const
     authenticate = async (req, res) => {
         const sessionCookie = req.cookies['sessionToken'] || '';
         const jwtKey = 'ashdh3872dunqsudn2eh313';
+        console.log(req.cookies);
         if (!sessionCookie) {
-            return { status: 400 }
+            return { status: 200 }
         }
         try {
             const decoded = jsonWt.verify(sessionCookie, jwtKey);
@@ -22,7 +23,7 @@ const
                 status: 200
             };
         } catch (err) {
-            return { status: 400}; 
+            return { status: 200}; 
         } 
     };
 
@@ -30,6 +31,7 @@ const
 const
     getProfile = async (req, res) => {
         const userEmail = req.body.email === null ? "" : req.body.email;
+        console.log(userEmail);
         const 
             userRef = db.collection('Users').doc(userEmail),
             doc = await userRef.get();
