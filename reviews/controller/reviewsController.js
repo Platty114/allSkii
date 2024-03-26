@@ -67,6 +67,22 @@ const
         }
     };
 
+// gets all reviews of a specific ski hill
+const
+    getHillReviews = async (req, res) => {
+        try {
+            const reviewsRef = db.collection('Reviews').where('skiHill', '==', req.params.id);
+            const response = await reviewsRef.get();
+            let responseArray = [];
+            response.forEach(document => {
+                responseArray.push(document.data());
+            });
+            res.send(responseArray);
+        } catch (error) {
+            res.send(error);
+        }
+    };
+
 //gets a single review from the db
 const
     getReview = async (req, res) => {
@@ -120,6 +136,7 @@ export {
     authenticate,
     createReview,
     getAllReviews,
+    getHillReviews,
     getReview,
     updateReview,
     deleteReview
