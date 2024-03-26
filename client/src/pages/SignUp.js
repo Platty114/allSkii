@@ -11,11 +11,12 @@ function SignUp() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const userData = {
-       email : event.target.email.value,
+      firstName: event.target.firstname.value,
+      lastName: event.target.lastname.value,
+        email : event.target.email.value,
        password : event.target.password.value,
     };
 
-    
 
     try {
       console.log(userData.email + "   " + userData.password);
@@ -55,11 +56,11 @@ function SignUp() {
       <p className="message">Signup now and get full access to our app. </p>
       <div className="flex">
         <label>
-          <input className="input" type="text" required />
+          <input className="input" type="text" name="firstname"required />
           <span>Firstname</span>
         </label>
         <label>
-          <input className="input" type="text" required />
+          <input className="input" type="text" name="lastname" required />
           <span>Lastname</span>
         </label>
       </div>  
