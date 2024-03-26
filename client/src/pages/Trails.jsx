@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import MapboxSkiRuns from '../components/Map';
 import lakeLouiseImage from '../media/LakeLouisePhoto.png';
 import nakiskaImage from '../media/NakiskaPhoto.png';
@@ -141,22 +141,71 @@ function Trails() {
 
   const coordinatesCase = coordinates ? checkCoordinatesCase(coordinates) : '';
 
+
+  const fetchGeoJsonData = async (coords) => {
+    try {
+      let endpoint = 'http://localhost:8081/runs/nakiska'; //nakiska is default endpoint
+      if (coords){
+        if (JSON.stringify(coords) === JSON.stringify([-115.0873, 49.4627])) {
+          endpoint = 'http://localhost:8081/runs/fernie';
+        } else if (JSON.stringify(coords) === JSON.stringify([-117.0483, 51.2976])) {
+          endpoint = 'http://localhost:8081/runs/kickinghorse';
+        } else if (JSON.stringify(coords) === JSON.stringify([-115.7765, 51.0785])) {
+          endpoint = 'http://localhost:8081/runs/sunshine';
+        } else if (JSON.stringify(coords) === JSON.stringify([-116.1622, 51.4419])) {
+          endpoint = 'http://localhost:8081/runs/lakelouise';
+        } else if (JSON.stringify(coords) === JSON.stringify([-118.1631, 50.9584])) {
+          endpoint = 'http://localhost:8081/runs/revelstoke';
+        } else if (JSON.stringify(coords) === JSON.stringify([-116.238157, 50.460374])) {
+          endpoint = 'http://localhost:8081/runs/panorama';
+        } else if (JSON.stringify(coords) === JSON.stringify([-115.6068, 51.2053])) {
+          endpoint = 'http://localhost:8081/runs/norquay';
+        } else if (JSON.stringify(coords) === JSON.stringify([-116.0048, 49.6879])) {
+          endpoint = 'http://localhost:8081/runs/kimberley';
+        } else if (JSON.stringify(coords) === JSON.stringify([-119.0610, 50.3598])) {
+          endpoint = 'http://localhost:8081/runs/silverStar';
+        } else if (JSON.stringify(coords) === JSON.stringify([-119.8891, 50.8837])) {
+          endpoint = 'http://localhost:8081/runs/sunPeaks';
+        } else if (JSON.stringify(coords) === JSON.stringify([-118.93528, 49.7160])) {
+          endpoint = 'http://localhost:8081/runs/bigWhite';
+        } 
+      } 
+      const response = await fetch(endpoint);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Error fetching GeoJSON data:', error);
+      return null;
+    }
+  };
+
+  const [firstHalfFeatures, setFirstHalfFeatures] = useState([]);
+  const [secondHalfFeatures, setSecondHalfFeatures] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const geoJsonData = await fetchGeoJsonData(coordinates);
+      if (geoJsonData) {
+        const halfIndex = Math.ceil(geoJsonData.features.length / 2);
+        setFirstHalfFeatures(geoJsonData.features.slice(0, halfIndex));
+        setSecondHalfFeatures(geoJsonData.features.slice(halfIndex));
+      }
+    };
+    fetchData();
+  }, [coordinates]);
+
+  console.log("added data from trails",firstHalfFeatures);
+  console.log(secondHalfFeatures);
+
+
   const checkCoordinatesTrail = (coords) => {
-    if (JSON.stringify(coords) === JSON.stringify([-115.1511,50.9427])) {
       return (
-        <RenderAPI selectedTrail={selectedTrail} handleSelectedTrail={handleSelectedTrail} map={map}
+        <RenderAPI selectedTrail={selectedTrail} handleSelectedTrail={handleSelectedTrail} firstHalfFeatures={firstHalfFeatures} secondHalfFeatures={secondHalfFeatures}
         />
       );
-    } else if (JSON.stringify(coords) === JSON.stringify([-116.1622,51.4419])) {
-      return (
-      <div className="Trail-Menu">
-        <div className="Trail-column1"></div>
-        <div className="Trail-column2"></div>
-      </div>
-      );
-    } else {
-      return 'No specific case for these coordinates';
-    }
   };
 
   const coordinatesTrail = coordinates ? checkCoordinatesTrail(coordinates) : '';
@@ -198,8 +247,6 @@ function Trails() {
       <div className="col1"><div dangerouslySetInnerHTML={{ __html: moveIcon }} style={{ marginTop: '20px', marginLeft: '60px', marginRight: '20px', fontSize: '60px', color: '#ffffff'}} />
       <div className="text1">Pan the map by pressing the left click button while moving the mouse</div>
       </div>
-      
-
       </div>
 
       )}
