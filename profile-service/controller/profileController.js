@@ -12,7 +12,7 @@ const
         const sessionCookie = req.cookies['sessionToken'] || '';
         const jwtKey = 'ashdh3872dunqsudn2eh313';
         if (!sessionCookie) {
-            return { status: 400 }
+            return { status: 401 }
         }
         try {
             const decoded = jsonWt.verify(sessionCookie, jwtKey);
@@ -22,14 +22,18 @@ const
                 status: 200
             };
         } catch (err) {
-            return { status: 400}; 
+            return { status: 401}; 
         } 
     };
 
 
 const
     getProfile = async (req, res) => {
-        const userEmail = req.body.email === null ? "" : req.body.email;
+        const userEmail = req.body.email = req.body.email;
+        if(!userEmail){
+            res.status(401).json({error: "invalid email"});
+            return;
+        }
         const 
             userRef = db.collection('Users').doc(userEmail),
             doc = await userRef.get();
@@ -46,7 +50,7 @@ const
         } 
         else {
             //email dosen't exist so send error
-            res.status(400).json({error: "invalid email"});
+            res.status(401).json({error: "invalid email"});
         }
 
     };
@@ -73,7 +77,7 @@ const
         } 
         else {
             //email dosen't exist so send error
-            res.status(400).json({error: "invalid email"});
+            res.status(401).json({error: "invalid email"});
         }
 
 
@@ -104,7 +108,7 @@ const
         } 
         else {
             //email dosen't exist so send error
-            res.status(400).json({error: "invalid email"});
+            res.status(401).json({error: "invalid email"});
         }
 
     };
