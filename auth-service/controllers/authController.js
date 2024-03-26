@@ -56,9 +56,9 @@ const
                 user: decoded
             })
         } catch (err) {
-            // response.status(401).send({
-            //     error: 'Invalid session token'
-            // })
+            response.status(401).send({
+                error: 'Invalid session token'
+            })
         } 
     };
 
