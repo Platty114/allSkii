@@ -1,44 +1,47 @@
 import React, {useState} from 'react';
-import ReactDOM from 'react-dom';
-import LoginValid from './LoginValid';
-import './Login.css'; // Ensure you have this CSS in your project, saved as Login.css
-import { useNavigate } from 'react-router-dom';
-import Home from './Home';
+
+import './Login.css'; 
+
 import { useAuth } from './AuthContext';
+
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import {AuthContext} from "./AuthContext";
+
 
 
 
 const Login = () => {
-  
-  // State hooks for username and password
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const { login } = useAuth();
   const navigate = useNavigate();
-
-  const {login} = useAuth();
-  // Function to handle form submission
-  const handleSubmit = (event) => {
-  event.preventDefault(); // Prevent the default form submission behavior
-    
-    if(username && password){
-      ReactDOM.render(
-        <React.StrictMode>
-            <LoginValid />
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
-    }else{
-
-        window.alert("Username and password");
-
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (username && password) {
+      try {
+        
+        const response = await axios.post('http://localhost:2345/signin', { email: username, password: password, } , {withCredentials: true});
+        if (response.status === 200) {
+          login(); // Log the user in (update your auth context state)
+          navigate('/home'); // Navigate to the Home page after login
+        }
+      } catch (error) {
+        console.error('Login failed:', error);
+        window.alert('Login failed: Incorrect username or password.');
+      }
+    } else {
+      window.alert("Username and password are required.");
     }
-    
-   
-  
+  };
 
-};
-  
-    return (
+  const handleSignUp = (event) => {
+    event.preventDefault();
+    navigate('/signup'); // Use navigate to switch to the SignUp page
+  };
+
+  return (
    
    <div className='login-container'>
     <div className="form-container">
@@ -80,7 +83,7 @@ const Login = () => {
         
       </div>
       <p className="signup">Don't have an account?
-        <a rel="noopener noreferrer" href="#" className="">Sign up</a>
+        <a rel="noopener noreferrer" href="#" className="" onClick={handleSignUp} >Sign up</a>
       </p>
     </div>
     </div>
