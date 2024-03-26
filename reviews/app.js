@@ -11,7 +11,6 @@ import {
     updateReview,
     deleteReview
 } from "./controller/reviewsController.js";
-import cookieParser from "cookie-parser";
 
 dotenv.config();
 
