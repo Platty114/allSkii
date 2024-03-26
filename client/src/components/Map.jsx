@@ -91,7 +91,7 @@ const MapboxSkiRuns = ({ onCoordinatesChange, hideText, onMapLoad }) => {
       // Replace the 'data.geojson' with the path to your generated GeoJSON file
       map.addSource("skiRuns", {
         type: "geojson",
-        data: "http://localhost:3001/ski-runs", // Updated relative path
+        data: "http://localhost:8081/runs/lakelouise", // Updated relative path
       });
       map.addLayer({
         id: "lineStringsOutline",
@@ -117,7 +117,7 @@ const MapboxSkiRuns = ({ onCoordinatesChange, hideText, onMapLoad }) => {
             "intermediate",
             "blue", // Color for 'intermediate' difficulty
             "advanced",
-            "red", // Color for 'advanced' difficulty
+            "black", // Color for 'advanced' difficulty
             "expert",
             "black",
             "gray", // Default color for unknown difficulty levels

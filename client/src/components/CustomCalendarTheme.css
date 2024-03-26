@@ -1,0 +1,53 @@
+.rbc-btn-group .rbc-active,
+.rbc-btn-group button:focus,
+.rbc-btn-group button:active {
+    background-color: grey !important; /* Adjusts background color */
+    color: white !important; /* Adjusts text color */
+}
+
+
+  .rbc-btn-group button {
+    color: #FFF !important; /* Change #FFF to whatever color you prefer */
+}
+
+  .button {
+    color: #ddd !important; /* Lighter text for better contrast */
+  }
+  
+  .rbc-today {
+    background-color: #555 !important; /* Darker background for today */
+  }
+  
+  .rbc-off-range-bg {
+    background-color: #222 !important; /* Darker background for off-range days */
+  }
+  
+  .rbc-off-range {
+    color: #666 !important; /* Dimmed text for off-range days */
+  }
+  
+  .rbc-selected {
+    background-color: #444 !important; /* Darker background for selected elements */
+    color: #fff !important;
+  }
+  
+  .rbc-event {
+    background-color: #777 !important; /* Darker background for events */
+    border-color: #888 !important; /* Darker border for events */
+  }
+  
+  .rbc-event-content {
+    color: #fff !important; /* Lighter text color for event content for better readability */
+  }
+  
+  .rbc-header {
+    background-color: #333 !important; /* Darker background for headers */
+    color: #ccc !important; /* Lighter text color for headers */
+  }
+  
+  .rbc-calendar {
+    color: #ccc !important; /* Lighter overall text color for better readability */
+    background-color: #282c34 !important; /* Overall background color */
+    border-color: #333 !important; /* Border color for various elements */
+  }
+  
