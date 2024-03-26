@@ -84,7 +84,9 @@ const
                     const token = jsonWt.sign({email: email}, jwtKey, {expiresIn: expiresIn});
                     response.cookie('sessionToken', token)
                     response.status(200).send({
-                        message: 'New token issues, now signed in'
+                        message: 'New token issues, now signed in',
+                        firstName: doc.data().firstName,
+                        lastName: doc.data().lastName
                     })
                 }
             });
