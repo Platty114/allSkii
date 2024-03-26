@@ -24,11 +24,11 @@ const
         }
     };
 
+//creates a review in the db
 const
     createReview = async (req, res) => {
         try {
             console.log(req.body);
-            // const id = req.body.id;
             const reviewJson = {
                 user: req.body.user,
                 placeName: req.body.placeName,
@@ -45,6 +45,7 @@ const
         }
     };
 
+//gets all reviews from the db
 const
     getAllReviews = async (req, res) => {
         try {
@@ -60,6 +61,7 @@ const
         }
     };
 
+//gets a single review from the db
 const
     getReview = async (req, res) => {
         try {
@@ -71,6 +73,7 @@ const
         }
     };
 
+//updates a review in the db
 const 
     updateReview = async (req, res) => {
         try {
@@ -96,6 +99,7 @@ const
         }
     };
 
+//deletes a review from the db
 const
     deleteReview = async (req, res) => {
         try {

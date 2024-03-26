@@ -68,7 +68,6 @@ app.get("/read/:id", async (req, res) => {
 });
 
 // update entry
-// MAY NEED ID FOR EACH ENTRY TO MAKE THIS WORK < TO DO
 app.post('/update', async (req, res) => {
     //verify that request is authenticated
     const
