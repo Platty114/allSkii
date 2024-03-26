@@ -4,10 +4,13 @@
   "description": "Microservice for AllSkii application, that provides weather and conditions for a ski hill",
   "main": "server.js",
   "type": "module",
+  "jest": {
+    "transform": {}
+  },
   "scripts": {
     "devStart": "nodemon server.js",
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,7 @@
     "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
+    "jest": "^29.7.0",
     "nodemon": "^3.1.0"
   }
 }
