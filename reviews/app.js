@@ -7,6 +7,7 @@ import {
     authenticate,
     createReview,
     getAllReviews,
+    getHillReviews,
     getReview,
     updateReview,
     deleteReview
@@ -48,6 +49,22 @@ app.get("/read/all", async (req, res) => {
     //make sure user is verified
     if(user.status === 200){
         await getAllReviews(req, res);
+    }
+    else{
+        res.status(200).json({error: "usernotauthed"});
+    } 
+});
+
+// get all reviews of a hill
+app.get("/read/hill/:id", async (req, res) => {
+    //verify that request is authenticated
+    const
+        user = await authenticate(req);
+    
+    //pass user, req and res to controller
+    //make sure user is verified
+    if(user.status === 200){
+        await getHillReviews(req, res);
     }
     else{
         res.status(200).json({error: "usernotauthed"});
