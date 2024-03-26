@@ -1,26 +1,27 @@
 import dotenv from "dotenv";
-import axios from "axios";
+import jsonWt from "jsonwebtoken";
 import geoJsonData from "./../ski_run_hill_relation.json" assert { type: 'json' }
 
 dotenv.config();
 
-const verifyUrl = process.env.VERIFICATION_URL;
-
-
 //uses authenticate service to check if req is authed
 const
     authenticate = async (req, res) => {
+        const sessionCookie = req.cookies['sessionToken'] || '';
+        const jwtKey = 'ashdh3872dunqsudn2eh313';
+        if (!sessionCookie) {
+            return { status: 200 }
+        }
         try {
-            return await axios.post(
-                verifyUrl,
-                req
-            )
-        }
-        catch (err){
-            //NEEDS TO BE CHANGED TO ENABLE AUTH!!!!
-            //console.log(err);
-            return {status: 200}
-        }
+            const decoded = jsonWt.verify(sessionCookie, jwtKey);
+            return {
+                message: 'Authenticated',
+                user: decoded,
+                status: 200
+            };
+        } catch (err) {
+            return { status: 200}; 
+        } 
     };
 
 

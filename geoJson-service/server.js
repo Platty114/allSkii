@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import cookieParser from "cookie-parser";
 import {
     authenticate,
     getAllGeoJson,
@@ -17,7 +18,7 @@ const
 
 app.use(express.json());
 app.use(cors()); // Use cors middleware to enable CORS
-
+app.use(cookieParser());
     
 //only need to return data based on latitude and longitude
 app

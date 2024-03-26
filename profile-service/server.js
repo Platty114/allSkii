@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import cookieParser from "cookie-parser";
 import { 
     authenticate, 
     getProfile, 
@@ -17,12 +18,13 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
+app.use(cookieParser());
 
 
 //get profile info
 //requies users email in body
 // { email: example@gmail.com }
-app.get("/profile/:email", async (req, res) => {
+app.get("/profile", async (req, res) => {
     //verify that request is authenticated
     const
         user = await authenticate(req);

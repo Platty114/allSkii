@@ -1,34 +1,35 @@
 import dotenv from "dotenv";
-import axios from "axios";
+import jsonWt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 
 import { db } from "../db/firebase.js";
 
 dotenv.config();
 
-const verifyUrl = process.env.VERIFICATION_URL;
-
-
 //uses authenticate service to check if req is authed
 const
     authenticate = async (req, res) => {
+        const sessionCookie = req.cookies['sessionToken'] || '';
+        const jwtKey = 'ashdh3872dunqsudn2eh313';
+        if (!sessionCookie) {
+            return { status: 400 }
+        }
         try {
-            return await axios.post(
-                verifyUrl,
-                req
-            )
-        }
-        catch (err){
-            //NEEDS TO BE CHANGED TO ENABLE AUTH!!!!
-            console.log(err);
-            return {status: 200}
-        }
+            const decoded = jsonWt.verify(sessionCookie, jwtKey);
+            return {
+                message: 'Authenticated',
+                user: decoded,
+                status: 200
+            };
+        } catch (err) {
+            return { status: 400}; 
+        } 
     };
 
 
 const
     getProfile = async (req, res) => {
-        const userEmail = req.params.email === null ? "" : req.params.email;
+        const userEmail = req.body.email === null ? "" : req.body.email;
         const 
             userRef = db.collection('Users').doc(userEmail),
             doc = await userRef.get();
