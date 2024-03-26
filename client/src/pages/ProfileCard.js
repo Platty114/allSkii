@@ -1,7 +1,10 @@
 import React from 'react';
 import './ProfileCard.css';
 import profileSkiing from '../media/profile-final-skii.png';
+
 const ProfileCard = () => {
+
+
     return (
         <div className="profileContainer">
           <div className="profileBox">

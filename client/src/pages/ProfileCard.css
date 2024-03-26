@@ -7,7 +7,6 @@
   }
   
   .profileBox {
-    
     border-radius: 10px;
     display: flex; /* Use flexbox */
     flex-direction: column; /* Stack children vertically */
