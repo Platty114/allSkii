@@ -1,7 +1,6 @@
-import express from "express";
 import dotenv from "dotenv";
 import axios from "axios";
-
+import jsonWt from "jsonwebtoken";
 //using dotenv parameters
 dotenv.config();
 
@@ -14,17 +13,23 @@ const
 //uses authenticate service to check if req is authed
 const
     authenticate = async (req, res) => {
+        const sessionCookie = req.cookies['sessionToken'] || '';
+        const jwtKey = 'ashdh3872dunqsudn2eh313';
+        if (!sessionCookie) {
+            //needs to be changed for deployment
+            return { status: 200 }
+        }
         try {
-            return await axios.post(
-                verifyUrl,
-                req
-            )
-        }
-        catch (err){
-            //NEEDS TO BE CHANGED TO ENABLE AUTH!!!!
-            console.log(err);
-            return {status: 200}
-        }
+            const decoded = jsonWt.verify(sessionCookie, jwtKey);
+            return {
+                message: 'Authenticated',
+                user: decoded,
+                status: 200
+            };
+        } catch (err) {
+            //needs to be changed for deployment
+            return { status: 200}; 
+        } 
     };
 
 //helper function that grabs weather info from openWeatherAPI and formats response.

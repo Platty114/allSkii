@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import cookieParser from "cookie-parser";
 
 import { 
     authenticate,
@@ -17,6 +18,7 @@ const
 //setup express / cors
 app.use(express.json());
 app.use(cors());
+app.use(cookieParser());
 
 //only need to return data based on latitude and longitude
 app
