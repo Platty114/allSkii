@@ -75,10 +75,20 @@ const
     updateReview = async (req, res) => {
         try {
             const id = req.body.id;
-            const newHill = "Whistler Blackcomb";
+            const user = req.body.user;
+            const placeName = req.body.placeName;
+            const category = req.body.category;
+            const skiHill = req.body.skiHill;
+            const rating = req.body.rating;
+            const comments = req.body.comments;
             const reviewsRef = await db.collection('Reviews').doc(id)
             .update({
-                skiHill: newHill
+                user: req.body.user,
+                placeName: req.body.placeName,
+                category: req.body.category,
+                skiHill: req.body.skiHill,
+                rating: req.body.rating,
+                comments: req.body.comments
             });
             res.send(reviewsRef);
         } catch(error) {
