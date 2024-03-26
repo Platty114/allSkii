@@ -2,6 +2,16 @@ import React, {useState, useEffect} from 'react';
 import MapboxSkiRuns from '../components/Map';
 import lakeLouiseImage from '../media/LakeLouisePhoto.png';
 import nakiskaImage from '../media/NakiskaPhoto.png';
+import fernieImage from '../media/ferniePhoto.png';
+import kickingHorseImage from '../media/kickingHorsePhoto.png';
+import sunshineImage from '../media/sunShinePhoto.png';
+import revelstokeImage from '../media/revelstokePhoto.png';
+import panoramaImage from  '../media/panoramaPhoto.png';
+import norquayImage from  '../media/norquayPhoto.png';
+import kimberleyImage from  '../media/kimberleyPhoto.png';
+import silverStarImage from "../media/silverStarPhoto.png"
+import sunPeaksImage from "../media/sunPeaksPhoto.png"
+import bigWhiteImage from "../media/bigWhitePhoto.png"
 import RenderAPI from '../components/RenderAPI';
 import DownhillSkiingIcon from '@mui/icons-material/DownhillSkiing';
 import MouseIcon from '@mui/icons-material/Mouse';
@@ -130,15 +140,86 @@ function Trails() {
     } else if (JSON.stringify(coords) === JSON.stringify([-116.1622,51.4419])) {
       return (
       <div style={{textAlign: 'center'}}>
-        <img src={lakeLouiseImage} alt="lakeLouise" width="200px" height="120px"/>
-        <h2>LakeLouise</h2>
+        <img style={{textAlign: 'center'}} src={lakeLouiseImage} alt="LakeLouise" width="460px" height="200px"/>
+        <div className="hillTitle">Lake Louise Ski Area Ltd.</div>
       </div>
       );
-    } else {
-      return 'No specific case for these coordinates';
+    } else if (JSON.stringify(coords) === JSON.stringify([-115.0873, 49.4627])) {
+      return (
+      <div style={{textAlign: 'center'}}>
+        <img style={{textAlign: 'center'}} src={fernieImage} alt="Fernie" width="460px" height="200px"/>
+        <div className="hillTitle">Fernie Ski Hill</div>
+      </div>
+      ); 
+  } else if (JSON.stringify(coords) === JSON.stringify([-117.0483, 51.2976])) {
+    return (
+    <div style={{textAlign: 'center'}}>
+      <img style={{textAlign: 'center'}} src={kickingHorseImage} alt="Kickinghorse" width="460px" height="200px"/>
+      <div className="hillTitle">Kicking Horse Mountain Resort</div>
+    </div>
+    );
+} else if (JSON.stringify(coords) === JSON.stringify([-115.7765, 51.0785])) {
+  return (
+  <div style={{textAlign: 'center'}}>
+    <img style={{textAlign: 'center'}} src={sunshineImage} alt="sunshine" width="460px" height="200px"/>
+    <div className="hillTitle">Banff Sunshine Village Ski Resort</div>
+  </div>
+  );
+}  else if (JSON.stringify(coords) === JSON.stringify([-118.1631, 50.9584])) {
+  return (
+  <div style={{textAlign: 'center'}}>
+    <img style={{textAlign: 'center'}} src={revelstokeImage} alt="revelstoke" width="460px" height="200px"/>
+    <div className="hillTitle">Revelstoke Mountain Resort</div>
+  </div>
+  ); 
+} else if (JSON.stringify(coords) === JSON.stringify([-116.238157, 50.460374])) {
+  return (
+  <div style={{textAlign: 'center'}}>
+    <img style={{textAlign: 'center'}} src={panoramaImage} alt="panorama" width="460px" height="200px"/>
+    <div className="hillTitle">Panorama Mountain Resort</div>
+  </div>
+  );
+  } else if (JSON.stringify(coords) === JSON.stringify([-115.6068, 51.2053])) {
+    return (
+    <div style={{textAlign: 'center'}}>
+      <img style={{textAlign: 'center'}} src={norquayImage} alt="norquay" width="460px" height="200px"/>
+      <div className="hillTitle">Mount Norquay</div>
+    </div>
+    );
     }
-  };
-
+    else if (JSON.stringify(coords) === JSON.stringify([-116.0048, 49.6879])) {
+      return (
+      <div style={{textAlign: 'center'}}>
+        <img style={{textAlign: 'center'}} src={kimberleyImage} alt="kimberley" width="460px" height="200px"/>
+        <div className="hillTitle">Kimberley Alpine Resort</div>
+      </div>
+      );
+      }
+      else if (JSON.stringify(coords) === JSON.stringify([-119.0610, 50.3598])) {
+        return (
+        <div style={{textAlign: 'center'}}>
+          <img style={{textAlign: 'center'}} src={silverStarImage} alt="silverStar" width="460px" height="200px"/>
+          <div className="hillTitle">SilverStar Mountain Resort</div>
+        </div>
+        );
+      }
+      else if (JSON.stringify(coords) === JSON.stringify([-119.8891, 50.8837])) {
+        return (
+          <div style={{textAlign: 'center'}}>
+            <img style={{textAlign: 'center'}} src={sunPeaksImage} alt="sunPeaks" width="460px" height="200px"/>
+            <div className="hillTitle">Sun Peaks Resort</div>
+          </div>
+        );
+        }
+        else if (JSON.stringify(coords) === JSON.stringify([-118.93528, 49.7160])) {
+          return (
+            <div style={{textAlign: 'center'}}>
+              <img style={{textAlign: 'center'}} src={bigWhiteImage} alt="bigWhite" width="460px" height="200px"/>
+              <div className="hillTitle">Big White Ski Resort</div>
+            </div>
+          );
+          }
+}
   const coordinatesCase = coordinates ? checkCoordinatesCase(coordinates) : '';
 
 
