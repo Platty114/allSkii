@@ -91,7 +91,7 @@ const MapboxSkiRuns = ({ onCoordinatesChange, hideText, onMapLoad }) => {
       // Replace the 'data.geojson' with the path to your generated GeoJSON file
       map.addSource("skiRuns", {
         type: "geojson",
-        data: "http://localhost:8081/runs/lakelouise", // Updated relative path
+        data: "http://localhost:8081", // Updated relative path
       });
       map.addLayer({
         id: "lineStringsOutline",
