@@ -1,6 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import cookieParser from "cookie-parser";
+
 import {
     authenticate,
     createReview,
@@ -9,6 +11,7 @@ import {
     updateReview,
     deleteReview
 } from "./controller/reviewsController.js";
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 
@@ -18,6 +21,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cors());
+app.use(cookieParser());
 
 // adding entries
 app.post('/create', async (req, res) => {
