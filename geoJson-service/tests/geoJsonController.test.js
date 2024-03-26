@@ -111,7 +111,9 @@ describe("Testing GeoJson getGeoJsonBySkiHill", () => {
     //user status 200 should return all geojson data
     test("User status 200 should return all geoJson data for specified hill", () => {
         const
-            req = {},
+            req = { params: {
+                hillName: "Nakiska"
+            }},
             res = {
                 json: jest.fn(),
                 status: jest.fn()
@@ -124,7 +126,7 @@ describe("Testing GeoJson getGeoJsonBySkiHill", () => {
             return { json: res.json}
         })
 
-        getAllGeoJson(user, req, res);
+        getGeoJsonBySkiHill(user, req, res);
 
         expect(res.status).toHaveBeenCalledWith(200);
         expect(res.json).toHaveBeenCalledTimes(1);
@@ -134,7 +136,9 @@ describe("Testing GeoJson getGeoJsonBySkiHill", () => {
     //user status 200 should return all geojson data
     test("User status 500 should return error", () => {
         const
-            req = {},
+            req = { params: {
+                hillName: "Nakiska"
+            }},
             res = {
                 json: jest.fn(),
                 status: jest.fn()
@@ -147,7 +151,7 @@ describe("Testing GeoJson getGeoJsonBySkiHill", () => {
             return { json: res.json}
         })
 
-        getAllGeoJson(user, req, res);
+        getGeoJsonBySkiHill(user, req, res);
 
         expect(res.status).toHaveBeenCalledWith(500);
         expect(res.json).toHaveBeenCalledWith({
@@ -158,7 +162,9 @@ describe("Testing GeoJson getGeoJsonBySkiHill", () => {
     //user status 200 should return all geojson data
     test("Any other user status should return 401", () => {
         const
-            req = {},
+            req = { params: {
+                hillName: "Nakiska"
+            }},
             res = {
                 json: jest.fn(),
                 status: jest.fn()
@@ -171,7 +177,7 @@ describe("Testing GeoJson getGeoJsonBySkiHill", () => {
             return { json: res.json}
         })
 
-        getAllGeoJson(user, req, res);
+        getGeoJsonBySkiHill(user, req, res);
 
         expect(res.status).toHaveBeenCalledWith(401);
         expect(res.json).toHaveBeenCalledWith({
