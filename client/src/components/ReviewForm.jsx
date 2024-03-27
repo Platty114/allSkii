@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { MemoryRouter } from 'react-router-dom';
 
 
-const ReviewFrom = ({ isOpen, onClose, coordinates, setReviews }) => {
+const ReviewFrom = ({ isOpen, onClose, coordinates, setReviews, setReviewAdded }) => {
     const [user, setUserName] = useState('');
     const [category, setCategory] = useState('skiing');
     const [comments, setComments] = useState('');
@@ -77,12 +77,14 @@ const ReviewFrom = ({ isOpen, onClose, coordinates, setReviews }) => {
           
                 if (response.ok) {
                   const result = await response.json();
+                  
                   setReviews((prevReviews) => [...prevReviews, result]);
                   setClickCounts(Array(5).fill(0));
                   setComments('');
                   setUserName('');
                   setRating(0);
                   skiHill = null;
+                  setReviewAdded(true);
                   onClose();
                 } else {
                   console.error('Failed to create review:', response.status);
