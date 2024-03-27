@@ -234,6 +234,59 @@ function Trails() {
 }
   const coordinatesCase = coordinates ? checkCoordinatesCase(coordinates) : '';
 
+  const fetchReviews = async (coords) => {
+    try {
+      let endpoint = 'http://localhost:8080/read/hill/Nakiska'; 
+      if (coords){
+        if (JSON.stringify(coords) === JSON.stringify([-115.0873, 49.4627])) {
+          endpoint = 'http://localhost:8080/read/hill/Fernie';
+        } else if (JSON.stringify(coords) === JSON.stringify([-117.0483, 51.2976])) {
+          endpoint = 'http://localhost:8080/read/hill/KickingHorse';
+        } else if (JSON.stringify(coords) === JSON.stringify([-115.7765, 51.0785])) {
+          endpoint = 'http://localhost:8080/read/hill/Sunshine';
+        } else if (JSON.stringify(coords) === JSON.stringify([-116.1622, 51.4419])) {
+          endpoint = 'http://localhost:8080/read/hill/LakeLouise';
+        } else if (JSON.stringify(coords) === JSON.stringify([-118.1631, 50.9584])) {
+          endpoint = 'http://localhost:8080/read/hill/Revelstoke';
+        } else if (JSON.stringify(coords) === JSON.stringify([-116.238157, 50.460374])) {
+          endpoint = 'http://localhost:8080/read/hill/Panorama';
+        } else if (JSON.stringify(coords) === JSON.stringify([-115.6068, 51.2053])) {
+          endpoint = 'http://localhost:8080/read/hill/Norquay';
+        } else if (JSON.stringify(coords) === JSON.stringify([-116.0048, 49.6879])) {
+          endpoint = 'http://localhost:8080/read/hill/Kimberley';
+        } else if (JSON.stringify(coords) === JSON.stringify([-119.0610, 50.3598])) {
+          endpoint = 'http://localhost:8080/read/hill/SilverStar';
+        } else if (JSON.stringify(coords) === JSON.stringify([-119.8891, 50.8837])) {
+          endpoint = 'http://localhost:8080/read/hill/SunPeaks';
+        } else if (JSON.stringify(coords) === JSON.stringify([-118.93528, 49.7160])) {
+          endpoint = 'http://localhost:8080/read/hill/BigWhite';
+        } 
+      } 
+      const response = await fetch(endpoint);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Error fetching GeoJSON data:', error);
+      return null;
+    }
+  };
+
+
+  useEffect(() => {
+    const fetchReviewData = async () => {
+      const reviewData = await fetchReviews(coordinates);
+      if (reviewData) {
+        setReviews(reviewData)
+      }
+    };
+    fetchReviewData();
+  }, [coordinates]);
+
+  console.log(reviews);
+
 
   const fetchGeoJsonData = async (coords) => {
     try {
@@ -344,7 +397,7 @@ function Trails() {
       <div class="review-list">
       {reviews.map((review, index) => (
               <div key={index} className="review">
-                <div className="review-user">{review.userName}</div>
+                <div className="review-user">{review.user}</div>
                 <div class="stars3">
 <div class="star3"style={{  color: review.rating >= 1 ? '#ffcc00' : '#656565' }}></div>
 <div class="star3"style={{  color: review.rating >= 2 ? '#ffcc00' : '#656565' }}></div>
