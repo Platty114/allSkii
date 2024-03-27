@@ -20,7 +20,7 @@ function SignUp() {
 
     try {
       console.log(userData.email + "   " + userData.password);
-      const response = await axios.post('http://localhost:2345/signup', userData);
+      const response = await axios.post('https://auth-service-7btvt4xvwq-pd.a.run.app/signup', userData);
       if (response.status === 200) {
         window.alert("Signup successful!");
         navigate('/login'); // Navigate to the login page after successful signup

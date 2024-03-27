@@ -225,30 +225,30 @@ function Trails() {
 
   const fetchGeoJsonData = async (coords) => {
     try {
-      let endpoint = 'http://localhost:8081/runs/nakiska'; //nakiska is default endpoint
+      let endpoint = 'https://geojson-service-7btvt4xvwq-pd.a.run.app/runs/nakiska'; //nakiska is default endpoint
       if (coords){
         if (JSON.stringify(coords) === JSON.stringify([-115.0873, 49.4627])) {
-          endpoint = 'http://localhost:8081/runs/fernie';
+          endpoint = 'https://geojson-service-7btvt4xvwq-pd.a.run.app/runs/fernie';
         } else if (JSON.stringify(coords) === JSON.stringify([-117.0483, 51.2976])) {
-          endpoint = 'http://localhost:8081/runs/kickinghorse';
+          endpoint = 'https://geojson-service-7btvt4xvwq-pd.a.run.app/runs/kickinghorse';
         } else if (JSON.stringify(coords) === JSON.stringify([-115.7765, 51.0785])) {
-          endpoint = 'http://localhost:8081/runs/sunshine';
+          endpoint = 'https://geojson-service-7btvt4xvwq-pd.a.run.app/runs/sunshine';
         } else if (JSON.stringify(coords) === JSON.stringify([-116.1622, 51.4419])) {
-          endpoint = 'http://localhost:8081/runs/lakelouise';
+          endpoint = 'https://geojson-service-7btvt4xvwq-pd.a.run.app/runs/lakelouise';
         } else if (JSON.stringify(coords) === JSON.stringify([-118.1631, 50.9584])) {
-          endpoint = 'http://localhost:8081/runs/revelstoke';
+          endpoint = 'https://geojson-service-7btvt4xvwq-pd.a.run.app/runs/revelstoke';
         } else if (JSON.stringify(coords) === JSON.stringify([-116.238157, 50.460374])) {
-          endpoint = 'http://localhost:8081/runs/panorama';
+          endpoint = 'https://geojson-service-7btvt4xvwq-pd.a.run.app/uns/panorama';
         } else if (JSON.stringify(coords) === JSON.stringify([-115.6068, 51.2053])) {
-          endpoint = 'http://localhost:8081/runs/norquay';
+          endpoint = 'https://geojson-service-7btvt4xvwq-pd.a.run.app/runs/norquay';
         } else if (JSON.stringify(coords) === JSON.stringify([-116.0048, 49.6879])) {
-          endpoint = 'http://localhost:8081/runs/kimberley';
+          endpoint = 'https://geojson-service-7btvt4xvwq-pd.a.run.app/runs/kimberley';
         } else if (JSON.stringify(coords) === JSON.stringify([-119.0610, 50.3598])) {
-          endpoint = 'http://localhost:8081/runs/silverStar';
+          endpoint = 'https://geojson-service-7btvt4xvwq-pd.a.run.app/runs/silverStar';
         } else if (JSON.stringify(coords) === JSON.stringify([-119.8891, 50.8837])) {
-          endpoint = 'http://localhost:8081/runs/sunPeaks';
+          endpoint = 'https://geojson-service-7btvt4xvwq-pd.a.run.app/runs/sunPeaks';
         } else if (JSON.stringify(coords) === JSON.stringify([-118.93528, 49.7160])) {
-          endpoint = 'http://localhost:8081/runs/bigWhite';
+          endpoint = 'https://geojson-service-7btvt4xvwq-pd.a.run.app/runs/bigWhite';
         } 
       } 
       const response = await fetch(endpoint);

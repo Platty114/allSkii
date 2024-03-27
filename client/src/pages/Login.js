@@ -21,7 +21,7 @@ const Login = () => {
     if (username && password) {
       try {
         
-        const response = await axios.post('http://localhost:2345/signin', { email: username, password: password});
+        const response = await axios.post('https://auth-service-7btvt4xvwq-pd.a.run.app/signin', { email: username, password: password});
         if (response.status === 200) {
           login(); // Log the user in (update your auth context state)
           navigate('/home'); // Navigate to the Home page after login
