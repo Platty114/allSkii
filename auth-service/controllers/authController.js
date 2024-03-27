@@ -17,6 +17,12 @@ const
             firstName = request.body.firstName,
             lastName = request.body.lastName;
 
+        if(!email || !password){
+            response.status(401).send({
+                error: "Invalid Email or Password"
+            })
+            return;
+        }
         const hash = bcrypt.hashSync(password, 10);
         const userRef = db.collection('Users').doc(email);
         const doc = await userRef.get();
@@ -34,7 +40,7 @@ const
                 message: 'Username created'
             })
         } else {
-            response.status(400).send({
+            response.status(401).send({
                 error: 'Username already exists'
             })
         }
