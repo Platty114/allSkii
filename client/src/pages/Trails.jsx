@@ -16,6 +16,7 @@ import RenderAPI from '../components/RenderAPI';
 import DownhillSkiingIcon from '@mui/icons-material/DownhillSkiing';
 import MouseIcon from '@mui/icons-material/Mouse';
 import feather from 'feather-icons';
+import ReviewForm from '../components/ReviewForm';
 
 
 
@@ -30,6 +31,12 @@ function Trails() {
   const [selectedTrail, setSelectedTrail] = useState(null);
   const [selectedFood, setSelectedFood] = useState(null);
   const [selectedAccomodation, setSelectedAccomodation] = useState(null);
+  const [showReviewsLayer, setShowReviewsLayer] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [reviews, setReviews] = useState([]);
+
+
+
 
   const handleCoordinatesChange = (newCoordinates) => {
     setCoordinates(newCoordinates);
@@ -41,10 +48,14 @@ function Trails() {
 
   const changeView = (e) => {
     setView(e.target.innerHTML);
+    setShowReviewsLayer(false);
+
   }
 
   const changeViewReview = (e) => {
     setView(!e.target.innerHTML);
+    setShowReviewsLayer(true);
+
   }
 
   const handleBackClick = () => {
@@ -52,6 +63,7 @@ function Trails() {
     setView(true);
     setPrevTrail(null);
     setSelectedTrail(null);
+    setShowReviewsLayer(false);
 
     if (map) {
       map.removeLayer(currentTrail);
@@ -222,6 +234,59 @@ function Trails() {
 }
   const coordinatesCase = coordinates ? checkCoordinatesCase(coordinates) : '';
 
+  const fetchReviews = async (coords) => {
+    try {
+      let endpoint = 'http://localhost:8080/read/hill/Nakiska'; 
+      if (coords){
+        if (JSON.stringify(coords) === JSON.stringify([-115.0873, 49.4627])) {
+          endpoint = 'http://localhost:8080/read/hill/Fernie';
+        } else if (JSON.stringify(coords) === JSON.stringify([-117.0483, 51.2976])) {
+          endpoint = 'http://localhost:8080/read/hill/KickingHorse';
+        } else if (JSON.stringify(coords) === JSON.stringify([-115.7765, 51.0785])) {
+          endpoint = 'http://localhost:8080/read/hill/Sunshine';
+        } else if (JSON.stringify(coords) === JSON.stringify([-116.1622, 51.4419])) {
+          endpoint = 'http://localhost:8080/read/hill/LakeLouise';
+        } else if (JSON.stringify(coords) === JSON.stringify([-118.1631, 50.9584])) {
+          endpoint = 'http://localhost:8080/read/hill/Revelstoke';
+        } else if (JSON.stringify(coords) === JSON.stringify([-116.238157, 50.460374])) {
+          endpoint = 'http://localhost:8080/read/hill/Panorama';
+        } else if (JSON.stringify(coords) === JSON.stringify([-115.6068, 51.2053])) {
+          endpoint = 'http://localhost:8080/read/hill/Norquay';
+        } else if (JSON.stringify(coords) === JSON.stringify([-116.0048, 49.6879])) {
+          endpoint = 'http://localhost:8080/read/hill/Kimberley';
+        } else if (JSON.stringify(coords) === JSON.stringify([-119.0610, 50.3598])) {
+          endpoint = 'http://localhost:8080/read/hill/SilverStar';
+        } else if (JSON.stringify(coords) === JSON.stringify([-119.8891, 50.8837])) {
+          endpoint = 'http://localhost:8080/read/hill/SunPeaks';
+        } else if (JSON.stringify(coords) === JSON.stringify([-118.93528, 49.7160])) {
+          endpoint = 'http://localhost:8080/read/hill/BigWhite';
+        } 
+      } 
+      const response = await fetch(endpoint);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Error fetching GeoJSON data:', error);
+      return null;
+    }
+  };
+
+
+  useEffect(() => {
+    const fetchReviewData = async () => {
+      const reviewData = await fetchReviews(coordinates);
+      if (reviewData) {
+        setReviews(reviewData)
+      }
+    };
+    fetchReviewData();
+  }, [coordinates]);
+
+  console.log(reviews);
+
 
   const fetchGeoJsonData = async (coords) => {
     try {
@@ -278,8 +343,10 @@ function Trails() {
     fetchData();
   }, [coordinates]);
 
-  console.log("added data from trails",firstHalfFeatures);
-  console.log(secondHalfFeatures);
+  const reviewWindow = () => {
+    setIsModalOpen(true);
+
+  }
 
 
   const checkCoordinatesTrail = (coords) => {
@@ -295,6 +362,25 @@ function Trails() {
   const maximizeIcon = feather.icons['maximize-2'].toSvg();
   const moveIcon = feather.icons['move'].toSvg();
 
+  const fiveStarReviews = reviews.filter(review => review.rating === 5);
+  const fiveStarPercentage = (fiveStarReviews.length / reviews.length) * 100;
+  const fourStarReviews = reviews.filter(review => review.rating === 4);
+  const fourStarPercentage = (fourStarReviews.length / reviews.length) * 100;
+  const threeStarReviews = reviews.filter(review => review.rating === 3);
+  const threeStarPercentage = (threeStarReviews.length / reviews.length) * 100;
+  const twoStarReviews = reviews.filter(review => review.rating === 2);
+  const twoStarPercentage = (twoStarReviews.length / reviews.length) * 100;
+  const oneStarReviews = reviews.filter(review => review.rating === 1);
+  const oneStarPercentage = (oneStarReviews.length / reviews.length) * 100;
+  const averageRating = (
+    (5 * fiveStarReviews.length +
+      4 * fourStarReviews.length +
+      3 * threeStarReviews.length +
+      2 * twoStarReviews.length +
+      1 * oneStarReviews.length) /
+    reviews.length
+  ).toFixed(1);
+  
 
   return (
 
@@ -306,6 +392,35 @@ function Trails() {
           hideText={handleSetHideText}
           onMapLoad={setMap}
           />
+          {showReviewsLayer && (
+    <div className="reviews-layer">
+      <div class="review-list">
+      {reviews.map((review, index) => (
+              <div key={index} className="review">
+                <div className="review-user">{review.user}</div>
+                <div class="stars3">
+<div class="star3"style={{  color: review.rating >= 1 ? '#ffcc00' : '#656565' }}></div>
+<div class="star3"style={{  color: review.rating >= 2 ? '#ffcc00' : '#656565' }}></div>
+<div class="star3"style={{  color: review.rating >= 3 ? '#ffcc00' : '#656565' }}></div>
+<div class="star3"style={{  color: review.rating >= 4 ? '#ffcc00' : '#656565' }}></div>
+<div class="star3"style={{  color: review.rating >= 5 ? '#ffcc00' : '#656565' }}></div>
+</div>
+                <div className="review-comment">{review.comments}</div>
+              </div>
+            ))}
+
+
+      </div>
+      <div className="write-review" onClick={reviewWindow}>Write a Review</div>
+      <ReviewForm
+      isOpen={isModalOpen}
+      onClose={() => setIsModalOpen(false)}
+      coordinates={coordinates}
+      setReviews={setReviews}
+    />
+
+    </div>
+  )}
         </div>
         <div className='map-container-right'>
           <div className='map-content-container'>
@@ -333,11 +448,56 @@ function Trails() {
       )}
               {hideText && coordinates && (<div>{coordinatesCase}
               <div className='Menu'>
-                <div className={'OverView' + (hideText && view ? ' active' : '')} onClick={changeView}>OverView</div>
+                <div className={'OverView' + (hideText && view ? ' active' : '')} onClick={changeView}>Overview</div>
                 <div className={'Review' + (hideText && !view ? ' active' : '')} onClick={changeViewReview}>Review</div>
               </div>
               {view && <div className='Trails'>{coordinatesTrail}</div>}
-              {!view && <div className='Reviews'>Reviews</div>}
+              {!view && <div className='Reviews'>
+              <div className='table'>
+
+    <div class="progress-row">
+      <div class="star-rating">5</div>
+      <div class="progress-bar-container">
+        <div class="progress-bar" style={{ width: `${fiveStarPercentage}%`}}></div>
+      </div>
+    </div>
+    <div class="progress-row">
+      <div class="star-rating">4</div>
+      <div class="progress-bar-container">
+        <div class="progress-bar" style={{ width: `${fourStarPercentage}%`}}></div>
+      </div>
+    </div>
+    <div class="progress-row">
+      <div class="star-rating">3</div>
+      <div class="progress-bar-container">
+        <div class="progress-bar" style={{ width: `${threeStarPercentage}%`}}></div>
+      </div>
+    </div>
+    <div class="progress-row">
+      <div class="star-rating">2</div>
+      <div class="progress-bar-container">
+        <div class="progress-bar" style={{ width: `${twoStarPercentage}%`}}></div>
+      </div>
+    </div>
+    <div class="progress-row">
+      <div class="star-rating">1</div>
+      <div class="progress-bar-container">
+        <div class="progress-bar" style={{ width: `${oneStarPercentage}%`}}></div>
+      </div>
+    </div>
+</div>
+<div class="stats-review-container">
+<div class="rating">{averageRating}</div>
+<div class="stars">
+<div class="star"style={{  color: averageRating >= 0 ? '#ffcc00' : '#656565'}}></div>
+<div class="star"style={{  color: averageRating >= 1.5 ? '#ffcc00' : '#656565'}}></div>
+<div class="star"style={{  color: averageRating >= 2.5 ? '#ffcc00' : '#656565'}}></div>
+<div class="star"style={{  color: averageRating >= 3.5 ? '#ffcc00' : '#656565'}}></div>
+<div class="star"style={{  color: averageRating >= 4.5 ? '#ffcc00' : '#656565'}}></div>
+</div>
+<div class="numbers">({reviews.length})</div>
+     </div>           
+                </div>}
               <div className='back-button' onClick={handleBackClick}>Back</div>
               </div>)}
           </div>
