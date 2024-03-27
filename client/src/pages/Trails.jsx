@@ -309,6 +309,25 @@ function Trails() {
   const maximizeIcon = feather.icons['maximize-2'].toSvg();
   const moveIcon = feather.icons['move'].toSvg();
 
+  const fiveStarReviews = reviews.filter(review => review.rating === 5);
+  const fiveStarPercentage = (fiveStarReviews.length / reviews.length) * 100;
+  const fourStarReviews = reviews.filter(review => review.rating === 4);
+  const fourStarPercentage = (fourStarReviews.length / reviews.length) * 100;
+  const threeStarReviews = reviews.filter(review => review.rating === 3);
+  const threeStarPercentage = (threeStarReviews.length / reviews.length) * 100;
+  const twoStarReviews = reviews.filter(review => review.rating === 2);
+  const twoStarPercentage = (twoStarReviews.length / reviews.length) * 100;
+  const oneStarReviews = reviews.filter(review => review.rating === 1);
+  const oneStarPercentage = (oneStarReviews.length / reviews.length) * 100;
+  const averageRating = (
+    (5 * fiveStarReviews.length +
+      4 * fourStarReviews.length +
+      3 * threeStarReviews.length +
+      2 * twoStarReviews.length +
+      1 * oneStarReviews.length) /
+    reviews.length
+  ).toFixed(1);
+  
 
   return (
 
@@ -326,7 +345,13 @@ function Trails() {
       {reviews.map((review, index) => (
               <div key={index} className="review">
                 <div className="review-user">{review.userName}</div>
-                <div>{review.rating}</div>
+                <div class="stars3">
+<div class="star3"style={{  color: review.rating >= 1 ? '#ffcc00' : '#656565' }}></div>
+<div class="star3"style={{  color: review.rating >= 2 ? '#ffcc00' : '#656565' }}></div>
+<div class="star3"style={{  color: review.rating >= 3 ? '#ffcc00' : '#656565' }}></div>
+<div class="star3"style={{  color: review.rating >= 4 ? '#ffcc00' : '#656565' }}></div>
+<div class="star3"style={{  color: review.rating >= 5 ? '#ffcc00' : '#656565' }}></div>
+</div>
                 <div className="review-comment">{review.comments}</div>
               </div>
             ))}
@@ -380,44 +405,44 @@ function Trails() {
     <div class="progress-row">
       <div class="star-rating">5</div>
       <div class="progress-bar-container">
-        <div class="progress-bar" style={{ width: '10%'}}></div>
+        <div class="progress-bar" style={{ width: `${fiveStarPercentage}%`}}></div>
       </div>
     </div>
     <div class="progress-row">
       <div class="star-rating">4</div>
       <div class="progress-bar-container">
-        <div class="progress-bar" style={{width: '80%'}}></div>
+        <div class="progress-bar" style={{ width: `${fourStarPercentage}%`}}></div>
       </div>
     </div>
     <div class="progress-row">
       <div class="star-rating">3</div>
       <div class="progress-bar-container">
-        <div class="progress-bar" style={{width: '12%'}}></div>
+        <div class="progress-bar" style={{ width: `${threeStarPercentage}%`}}></div>
       </div>
     </div>
     <div class="progress-row">
       <div class="star-rating">2</div>
       <div class="progress-bar-container">
-        <div class="progress-bar" style={{width: '70%'}}></div>
+        <div class="progress-bar" style={{ width: `${twoStarPercentage}%`}}></div>
       </div>
     </div>
     <div class="progress-row">
       <div class="star-rating">1</div>
       <div class="progress-bar-container">
-        <div class="progress-bar" style={{width: '50%'}}></div>
+        <div class="progress-bar" style={{ width: `${oneStarPercentage}%`}}></div>
       </div>
     </div>
 </div>
 <div class="stats-review-container">
-<div class="rating">4.0</div>
+<div class="rating">{averageRating}</div>
 <div class="stars">
-<div class="star"style={{  color: '#ffcc00'}}></div>
-<div class="star"style={{  color: '#ffcc00'}}></div>
-<div class="star"style={{  color: '#ffcc00'}}></div>
-<div class="star"style={{  color: '#ffcc00'}}></div>
-<div class="star"style={{  color: '#656565'}}></div>
+<div class="star"style={{  color: averageRating >= 0 ? '#ffcc00' : '#656565'}}></div>
+<div class="star"style={{  color: averageRating >= 1.5 ? '#ffcc00' : '#656565'}}></div>
+<div class="star"style={{  color: averageRating >= 2.5 ? '#ffcc00' : '#656565'}}></div>
+<div class="star"style={{  color: averageRating >= 3.5 ? '#ffcc00' : '#656565'}}></div>
+<div class="star"style={{  color: averageRating >= 4.5 ? '#ffcc00' : '#656565'}}></div>
 </div>
-<div class="numbers">(420)</div>
+<div class="numbers">({reviews.length})</div>
      </div>           
                 </div>}
               <div className='back-button' onClick={handleBackClick}>Back</div>
