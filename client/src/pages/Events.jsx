@@ -12,8 +12,6 @@ const darkTheme = createTheme({
 });
 
 function Events() {
-  
-  
   return (
     <ThemeProvider theme={darkTheme}>
       <div style={{ backgroundColor: darkTheme.palette.background.default, minHeight: '97.4vh' }}>
