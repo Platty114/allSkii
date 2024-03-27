@@ -137,5 +137,152 @@ describe("Testing getProfile", () => {
 
 
 describe("Testing updateName", () => {
+    //invaid email should return 401
+    test('Invalid email should return 401', async () => {
+        const
+            req = {
+                body: {
+                    email: "jjjjjjjjjjjjjjjjj",
+                    firstName: "test",
+                    lastName: "lastName"
+                }
+            },
+            res = {
+                json: jest.fn(),
+                status: jest.fn()
+            };
 
+        res.status.mockImplementation((json) => {
+            return { json: res.json}
+        })
+
+        await updateName(req, res);
+
+        expect(res.status).toHaveBeenCalledWith(401);
+        expect(res.json).toHaveBeenCalledTimes(1);
+        expect(res.json).toHaveBeenCalledWith({error: "invalid email"});
+    });
+
+    //invaid email should return 401
+    test('Empty email should return 401', async () => {
+        const
+            req = {
+                body: {
+                    email: null,
+                    firstName: "test"
+                }
+            },
+            res = {
+                json: jest.fn(),
+                status: jest.fn()
+            };
+
+        res.status.mockImplementation((json) => {
+            return { json: res.json}
+        })
+
+        await updateName(req, res);
+
+        expect(res.status).toHaveBeenCalledWith(401);
+        expect(res.json).toHaveBeenCalledTimes(1);
+        expect(res.json).toHaveBeenCalledWith({error: "invalid email"});
+    });
+
+    //invaid email should return 401
+    test('No email should return 401', async () => {
+        const
+            req = {
+                body: {
+                }
+            },
+            res = {
+                json: jest.fn(),
+                status: jest.fn()
+            };
+
+        res.status.mockImplementation((json) => {
+            return { json: res.json}
+        })
+
+        await getProfile(req, res);
+
+        expect(res.status).toHaveBeenCalledWith(401);
+        expect(res.json).toHaveBeenCalledTimes(1);
+        expect(res.json).toHaveBeenCalledWith({error: "invalid email"});
+    });
+});
+
+describe("Testing updatePassword", () => {
+    //invaid email should return 401
+    test('Invalid email should return 401', async () => {
+        const
+            req = {
+                body: {
+                    email: "jjjjjjjjjjjjjjjjj",
+                    password: "supersecure"
+                }
+            },
+            res = {
+                json: jest.fn(),
+                status: jest.fn()
+            };
+
+        res.status.mockImplementation((json) => {
+            return { json: res.json}
+        })
+
+        await updateName(req, res);
+
+        expect(res.status).toHaveBeenCalledWith(401);
+        expect(res.json).toHaveBeenCalledTimes(1);
+        expect(res.json).toHaveBeenCalledWith({error: "invalid email"});
+    });
+
+    //invaid email should return 401
+    test('Empty email should return 401', async () => {
+        const
+            req = {
+                body: {
+                    email: null,
+                    password: "newPass"
+                }
+            },
+            res = {
+                json: jest.fn(),
+                status: jest.fn()
+            };
+
+        res.status.mockImplementation((json) => {
+            return { json: res.json}
+        })
+
+        await updateName(req, res);
+
+        expect(res.status).toHaveBeenCalledWith(401);
+        expect(res.json).toHaveBeenCalledTimes(1);
+        expect(res.json).toHaveBeenCalledWith({error: "invalid email"});
+    });
+
+    //invaid email should return 401
+    test('No email should return 401', async () => {
+        const
+            req = {
+                body: {
+                }
+            },
+            res = {
+                json: jest.fn(),
+                status: jest.fn()
+            };
+
+        res.status.mockImplementation((json) => {
+            return { json: res.json}
+        })
+
+        await getProfile(req, res);
+
+        expect(res.status).toHaveBeenCalledWith(401);
+        expect(res.json).toHaveBeenCalledTimes(1);
+        expect(res.json).toHaveBeenCalledWith({error: "invalid email"});
+    });
 });
