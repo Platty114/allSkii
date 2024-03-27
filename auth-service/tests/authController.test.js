@@ -206,3 +206,60 @@ describe("Testing SignIn", () => {
         });
     });
 })
+
+
+describe("Testing Signup", () => {
+    //no email
+    test("Missing email should return status 401", async () => {
+        const
+            req = {
+                body: {
+                    password: "test1323"
+                }
+            },
+            res = {
+                send: jest.fn(),
+                status: jest.fn()
+            };
+
+
+        res.status.mockImplementation((send) => {
+            return { send: res.send}
+        })
+
+        await signup(req, res);
+
+        expect(res.status).toHaveBeenCalledWith(401);
+        expect(res.send).toHaveBeenCalledTimes(1);
+        expect(res.send).toHaveBeenCalledWith({
+            error: "Invalid Email or Password"
+        });
+    });
+
+    //no password
+    test("Missing password should return status 401", async () => {
+        const
+            req = {
+                body: {
+                    email: "platt@gmail.com"
+                }
+            },
+            res = {
+                send: jest.fn(),
+                status: jest.fn()
+            };
+
+
+        res.status.mockImplementation((send) => {
+            return { send: res.send}
+        })
+
+        await signup(req, res);
+
+        expect(res.status).toHaveBeenCalledWith(401);
+        expect(res.send).toHaveBeenCalledTimes(1);
+        expect(res.send).toHaveBeenCalledWith({
+            error: "Invalid Email or Password"
+        });
+    });
+})
