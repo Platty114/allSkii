@@ -164,6 +164,7 @@
     height: 180px;
     overflow-y: auto;
     box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+    scrollbar-color: #2a2a2a;
   }
 
   .Trail {
@@ -366,6 +367,7 @@
   height: 500px;
   overflow-y: auto;
   margin-bottom: 20px;
+  scrollbar-color: dark;
 }
 
 
@@ -405,11 +407,11 @@
   align-items: center;
   box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
   background-color: #2a2a2a;
-  width: 450px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   z-index: 1000; 
-  margin-left: 160px;
-  margin-top: 130px;
+  margin-left: 140px;
+  margin-top: 70px;
   border-radius: 10px;
 }
 
@@ -503,8 +505,8 @@
 }
 
 .review {
-  width: 200px;
-  height: 100px;
+  width: 400px;
+  height: 150px;
   background-color: #2a2a2a;
   margin-top: 20px;
   border-radius: 10px;
@@ -512,4 +514,45 @@
   display: flex;
   align-content: center;
   flex-direction: column;
+  margin-left: 50px;
+}
+
+.review-user {
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.stars3 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.star3 {
+  position: relative;
+  display: inline-block;
+  width: 5px; 
+  height: 5px; 
+  margin-right: 12px; 
+}
+
+.star3::before {
+  content: "\2605";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+}
+
+.review-comment {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  overflow-y: auto;
+  width: 360px;
+  height: 60px;
+  scrollbar-color: dark;
 }
