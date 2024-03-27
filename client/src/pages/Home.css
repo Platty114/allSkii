@@ -17,11 +17,11 @@
 } */
 
 .content {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   
   .top {
-    height: 50vh;
+    height: 40vh;
     width: 100%;
     background-image: url('../media/Background.png'); /* Using template string syntax as a placeholder */
     background-repeat: no-repeat;
@@ -36,7 +36,7 @@
     color: white;
     font-size: 96px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    padding-top: 100%;
+    padding-top: 40%;
     font-family: 'Josefin Sans';
     font-weight: 600;
   }
