@@ -1,56 +1,45 @@
 import express from "express";
 import dotenv from "dotenv";
-import geoJsonData from "./ski_runs_alberta.json" assert { type: 'json' }
+import cors from "cors";
+import cookieParser from "cookie-parser";
+import {
+    authenticate,
+    getAllGeoJson,
+    getGeoJsonBySkiHill,
+} from "./controllers/geoJsonController.js"
 
 //using dotenv parameters
 dotenv.config();
 
 const
     app = express(),
-    port = process.env.PORT,
-    verifyUrl = process.env.VERIFICATION_URL;
+    port = process.env.PORT;
 
 
 app.use(express.json());
+app.use(cors()); // Use cors middleware to enable CORS
+app.use(cookieParser());
     
 //only need to return data based on latitude and longitude
 app
     .get("/", async (req, res) => {
         //verify that user making request is signed in 
         const
-            user = await(async () => { 
-                try{
-                    return await axios.post(
-                        verifyUrl,
-                        req
-                    ) 
-                }
-                catch(err){
-                    //THIS NEEDS TO BE CHANGED
-                    //SHOULD BE STATUS 500, only
-                    //set to 200 right now for testing purposes.
-                    return { status: 200}
-                }
-            })();
+            user = await authenticate(req, res); 
 
-        //auth correctly
-        if(user.status === 200){
-            //send geoJsonData to client
-            res.status(200).json(geoJsonData);
-        }
-        //auth service failure
-        else if (user.status === 500){
-            res.status(500).json({
-                error: "Internal service error"
-            });
-        }
-        //un authed
-        else{
-            res.status(401).json({
-                error: "unauthenticated user"
-            });
-        }
+        getAllGeoJson(user, req, res); 
   });
+
+
+
+app
+    .get("/runs/:hillName", async (req, res) => {
+        //verify that user making request is signed in 
+        const
+            user = await authenticate(req, res); 
+
+        getGeoJsonBySkiHill(user, req, res);
+});
 
 
 //listen

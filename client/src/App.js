@@ -7,22 +7,31 @@ import Reviews from './pages/Reviews';
 import Blogs from './pages/Blogs';
 import Events from './pages/Events';
 import Topbar from './components/Topbar';
+import LoginValid from './pages/LoginValid';
+import { AuthProvider, useAuth } from './pages/AuthContext';
+import { Navigate } from 'react-router-dom';
+import SignUp from './pages/SignUp';
 
+// function useAuthenticated() {
+//   const { isLoggedIn } = useAuth();
+//   return isLoggedIn;
+// }
+// function ProtectedRoute({ children }) {
+//   const { isLoggedIn } = useAuth(); // Use the auth status from context
+//   return isLoggedIn ? children : <Navigate to="/login" />;
+// }
 function App() {
+  
   return (
-    <div>
-      <Router>
-        <Topbar />
+  <AuthProvider>
+   <Router>      
         <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/trails" element={<Trails />} />
-          <Route path="/reviews" element={<Reviews />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/events" element={<Events />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/*" element={<LoginValid/>} />
         </Routes>
       </Router>
-    </div>
+  </AuthProvider>
   );
 }
 

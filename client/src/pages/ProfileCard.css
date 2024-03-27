@@ -1,0 +1,35 @@
+
+.profileContainer {
+    padding-left: 100px;
+    text-align: center;
+    
+    overflow: scroll;
+  }
+  
+  .profileBox {
+    border-radius: 10px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align items for a tidy look */
+  }
+  
+  .profileImage {
+  border-radius: 50%;
+  width: min-content; /* Adjust based on the actual size of your image or use 'auto' */
+  height:min-content; /* Adjust based on the actual size of your image or use 'auto' */
+  object-fit: cover;
+  display: block; /* Ensures the image doesn't have extra space around it */
+  margin: 0 auto; /* Center the image if the container is wider */
+  
+}
+
+.profileText {
+  color: black;
+  margin-top: 10px; /* Adjusts the space between the image and the title */
+}
+
+  
+  .profileText h2, .profileText p {
+    margin: 0; /* Keeps the text snug against the image */
+  }
+  
