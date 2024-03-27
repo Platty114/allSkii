@@ -34,6 +34,8 @@ function Trails() {
   const [showReviewsLayer, setShowReviewsLayer] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [reviews, setReviews] = useState([]);
+  const [reviewAdded, setReviewAdded] = useState(false);
+
 
 
 
@@ -279,13 +281,14 @@ function Trails() {
     const fetchReviewData = async () => {
       const reviewData = await fetchReviews(coordinates);
       if (reviewData) {
-        setReviews(reviewData)
+        setReviews(reviewData);
+        setReviewAdded(false);
       }
     };
     fetchReviewData();
-  }, [coordinates]);
+  }, [coordinates, reviewAdded]);
 
-  console.log(reviews);
+  console.log("recently called reviews", reviews);
 
 
   const fetchGeoJsonData = async (coords) => {
@@ -417,6 +420,7 @@ function Trails() {
       onClose={() => setIsModalOpen(false)}
       coordinates={coordinates}
       setReviews={setReviews}
+      setReviewAdded={setReviewAdded}
     />
 
     </div>
