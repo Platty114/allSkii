@@ -3,3 +3,4 @@ client/node_modules/
 events/node_modules/
 reviews/node_modules/
 node_modules/
+event-loader/node_modules
