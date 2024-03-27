@@ -16,6 +16,7 @@ import RenderAPI from '../components/RenderAPI';
 import DownhillSkiingIcon from '@mui/icons-material/DownhillSkiing';
 import MouseIcon from '@mui/icons-material/Mouse';
 import feather from 'feather-icons';
+import ReviewForm from '../components/ReviewForm';
 
 
 
@@ -30,6 +31,12 @@ function Trails() {
   const [selectedTrail, setSelectedTrail] = useState(null);
   const [selectedFood, setSelectedFood] = useState(null);
   const [selectedAccomodation, setSelectedAccomodation] = useState(null);
+  const [showReviewsLayer, setShowReviewsLayer] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [reviews, setReviews] = useState([]);
+
+
+
 
   const handleCoordinatesChange = (newCoordinates) => {
     setCoordinates(newCoordinates);
@@ -41,10 +48,14 @@ function Trails() {
 
   const changeView = (e) => {
     setView(e.target.innerHTML);
+    setShowReviewsLayer(false);
+
   }
 
   const changeViewReview = (e) => {
     setView(!e.target.innerHTML);
+    setShowReviewsLayer(true);
+
   }
 
   const handleBackClick = () => {
@@ -52,6 +63,7 @@ function Trails() {
     setView(true);
     setPrevTrail(null);
     setSelectedTrail(null);
+    setShowReviewsLayer(false);
 
     if (map) {
       map.removeLayer(currentTrail);
@@ -278,8 +290,10 @@ function Trails() {
     fetchData();
   }, [coordinates]);
 
-  console.log("added data from trails",firstHalfFeatures);
-  console.log(secondHalfFeatures);
+  const reviewWindow = () => {
+    setIsModalOpen(true);
+
+  }
 
 
   const checkCoordinatesTrail = (coords) => {
@@ -306,6 +320,29 @@ function Trails() {
           hideText={handleSetHideText}
           onMapLoad={setMap}
           />
+          {showReviewsLayer && (
+    <div className="reviews-layer">
+      <div class="review-list">
+      {reviews.map((review, index) => (
+              <div key={index} className="review">
+                <div className="review-user">{review.userName}</div>
+                <div>{review.rating}</div>
+                <div className="review-comment">{review.comments}</div>
+              </div>
+            ))}
+
+
+      </div>
+      <div className="write-review" onClick={reviewWindow}>Write a Review</div>
+      <ReviewForm
+      isOpen={isModalOpen}
+      onClose={() => setIsModalOpen(false)}
+      coordinates={coordinates}
+      setReviews={setReviews}
+    />
+
+    </div>
+  )}
         </div>
         <div className='map-container-right'>
           <div className='map-content-container'>
@@ -333,11 +370,56 @@ function Trails() {
       )}
               {hideText && coordinates && (<div>{coordinatesCase}
               <div className='Menu'>
-                <div className={'OverView' + (hideText && view ? ' active' : '')} onClick={changeView}>OverView</div>
+                <div className={'OverView' + (hideText && view ? ' active' : '')} onClick={changeView}>Overview</div>
                 <div className={'Review' + (hideText && !view ? ' active' : '')} onClick={changeViewReview}>Review</div>
               </div>
               {view && <div className='Trails'>{coordinatesTrail}</div>}
-              {!view && <div className='Reviews'>Reviews</div>}
+              {!view && <div className='Reviews'>
+              <div className='table'>
+
+    <div class="progress-row">
+      <div class="star-rating">5</div>
+      <div class="progress-bar-container">
+        <div class="progress-bar" style={{ width: '10%'}}></div>
+      </div>
+    </div>
+    <div class="progress-row">
+      <div class="star-rating">4</div>
+      <div class="progress-bar-container">
+        <div class="progress-bar" style={{width: '80%'}}></div>
+      </div>
+    </div>
+    <div class="progress-row">
+      <div class="star-rating">3</div>
+      <div class="progress-bar-container">
+        <div class="progress-bar" style={{width: '12%'}}></div>
+      </div>
+    </div>
+    <div class="progress-row">
+      <div class="star-rating">2</div>
+      <div class="progress-bar-container">
+        <div class="progress-bar" style={{width: '70%'}}></div>
+      </div>
+    </div>
+    <div class="progress-row">
+      <div class="star-rating">1</div>
+      <div class="progress-bar-container">
+        <div class="progress-bar" style={{width: '50%'}}></div>
+      </div>
+    </div>
+</div>
+<div class="stats-review-container">
+<div class="rating">4.0</div>
+<div class="stars">
+<div class="star"style={{  color: '#ffcc00'}}></div>
+<div class="star"style={{  color: '#ffcc00'}}></div>
+<div class="star"style={{  color: '#ffcc00'}}></div>
+<div class="star"style={{  color: '#ffcc00'}}></div>
+<div class="star"style={{  color: '#656565'}}></div>
+</div>
+<div class="numbers">(420)</div>
+     </div>           
+                </div>}
               <div className='back-button' onClick={handleBackClick}>Back</div>
               </div>)}
           </div>
