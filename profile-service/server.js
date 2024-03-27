@@ -28,7 +28,7 @@ app.get("/profile", async (req, res) => {
     //verify that request is authenticated
     const
         user = await authenticate(req);
-    
+        
     //pass user, req and res to controller
     //make sure user is verified
     if(user.status === 200){
@@ -60,7 +60,7 @@ app.put("/updatePassword", async (req, res) => {
     //verify that request is authenticated
     const
         user = await authenticate(req);
-    
+        
     //pass user, req and res to controller
     //make sure user is verified
     if(user.status === 200){
