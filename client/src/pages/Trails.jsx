@@ -236,30 +236,30 @@ function Trails() {
 
   const fetchReviews = async (coords) => {
     try {
-      let endpoint = 'http://localhost:8080/read/hill/Nakiska'; 
+      let endpoint = 'https://reviews-service-7btvt4xvwq-pd.a.run.app/read/hill/Nakiska'; 
       if (coords){
         if (JSON.stringify(coords) === JSON.stringify([-115.0873, 49.4627])) {
-          endpoint = 'http://localhost:8080/read/hill/Fernie';
+          endpoint = 'https://reviews-service-7btvt4xvwq-pd.a.run.app/read/hill/Fernie';
         } else if (JSON.stringify(coords) === JSON.stringify([-117.0483, 51.2976])) {
-          endpoint = 'http://localhost:8080/read/hill/KickingHorse';
+          endpoint = 'https://reviews-service-7btvt4xvwq-pd.a.run.app/read/hill/KickingHorse';
         } else if (JSON.stringify(coords) === JSON.stringify([-115.7765, 51.0785])) {
-          endpoint = 'http://localhost:8080/read/hill/Sunshine';
+          endpoint = 'https://reviews-service-7btvt4xvwq-pd.a.run.app/read/hill/Sunshine';
         } else if (JSON.stringify(coords) === JSON.stringify([-116.1622, 51.4419])) {
-          endpoint = 'http://localhost:8080/read/hill/LakeLouise';
+          endpoint = 'https://reviews-service-7btvt4xvwq-pd.a.run.app/read/hill/LakeLouise';
         } else if (JSON.stringify(coords) === JSON.stringify([-118.1631, 50.9584])) {
-          endpoint = 'http://localhost:8080/read/hill/Revelstoke';
+          endpoint = 'https://reviews-service-7btvt4xvwq-pd.a.run.app/read/hill/Revelstoke';
         } else if (JSON.stringify(coords) === JSON.stringify([-116.238157, 50.460374])) {
-          endpoint = 'http://localhost:8080/read/hill/Panorama';
+          endpoint = 'https://reviews-service-7btvt4xvwq-pd.a.run.app/read/hill/Panorama';
         } else if (JSON.stringify(coords) === JSON.stringify([-115.6068, 51.2053])) {
-          endpoint = 'http://localhost:8080/read/hill/Norquay';
+          endpoint = 'https://reviews-service-7btvt4xvwq-pd.a.run.app/read/hill/Norquay';
         } else if (JSON.stringify(coords) === JSON.stringify([-116.0048, 49.6879])) {
-          endpoint = 'http://localhost:8080/read/hill/Kimberley';
+          endpoint = 'https://reviews-service-7btvt4xvwq-pd.a.run.app/read/hill/Kimberley';
         } else if (JSON.stringify(coords) === JSON.stringify([-119.0610, 50.3598])) {
-          endpoint = 'http://localhost:8080/read/hill/SilverStar';
+          endpoint = 'https://reviews-service-7btvt4xvwq-pd.a.run.app/read/hill/SilverStar';
         } else if (JSON.stringify(coords) === JSON.stringify([-119.8891, 50.8837])) {
-          endpoint = 'http://localhost:8080/read/hill/SunPeaks';
+          endpoint = 'https://reviews-service-7btvt4xvwq-pd.a.run.app/read/hill/SunPeaks';
         } else if (JSON.stringify(coords) === JSON.stringify([-118.93528, 49.7160])) {
-          endpoint = 'http://localhost:8080/read/hill/BigWhite';
+          endpoint = 'https://reviews-service-7btvt4xvwq-pd.a.run.app/read/hill/BigWhite';
         } 
       } 
       const response = await fetch(endpoint);

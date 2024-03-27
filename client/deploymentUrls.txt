@@ -1,0 +1,7 @@
+reviews : https://reviews-service-7btvt4xvwq-pd.a.run.app/
+events : https://events-service-7btvt4xvwq-pd.a.run.app/
+geoJson : https://geojson-service-7btvt4xvwq-pd.a.run.app/
+profile : https://profile-service-7btvt4xvwq-pd.a.run.app/
+conditons : https://conditions-service-7btvt4xvwq-pd.a.run.app/
+auth : https://auth-service-7btvt4xvwq-pd.a.run.app/
+

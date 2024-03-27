@@ -12,7 +12,8 @@ import {AuthContext} from "./AuthContext";
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
- 
+  // const [firstName, setFname] = useState('');
+  // const [lastName, setLname] = useState('');
   const { login } = useAuth();
   const navigate = useNavigate();
   
@@ -21,10 +22,14 @@ const Login = () => {
     if (username && password) {
       try {
         
-        const response = await axios.post('https://auth-service-7btvt4xvwq-pd.a.run.app/signin', { email: username, password: password});
+        const response = await axios.post('http://localhost:2345/signin', { email: username, password: password});
+        
+        
         if (response.status === 200) {
-          login(); // Log the user in (update your auth context state)
-          navigate('/home'); // Navigate to the Home page after login
+          console.log(response.data.firstName + "  " + response.data.lastName);
+
+          login(username,response.data.firstName, response.data.lastName); // Log the user in (update your auth context state)
+          navigate('/home');      // Navigate to the Home page after login
         }
       } catch (error) {
         console.error('Login failed:', error);
@@ -82,7 +87,7 @@ const Login = () => {
         
       </div>
       <p className="signup">Don't have an account?
-        <a rel="noopener noreferrer" href="#" className="" onClick={handleSignUp} >Sign up</a>
+        <a rel="noopener noreferrer" href="#" className="s" onClick={handleSignUp} > {   } Sign up</a>
       </p>
     </div>
     </div>

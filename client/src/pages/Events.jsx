@@ -20,7 +20,7 @@ function Events() {
   const [filterPricing, setFilterPricing] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:8083/read/all`)
+    axios.get(`https://events-service-7btvt4xvwq-pd.a.run.app/read/all`)
       .then(response => {
         if (eventsData === null) {
           setEventsData(response.data);
