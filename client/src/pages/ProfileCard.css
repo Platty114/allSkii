@@ -7,29 +7,47 @@
   }
   
   .profileBox {
-    border-radius: 10px;
+    border-radius: 0;
     display: flex; /* Use flexbox */
-    flex-direction: column; /* Stack children vertically */
+    flex-direction:row; /* Stack children vertically */
     align-items: center; /* Center-align items for a tidy look */
   }
   
   .profileImage {
   border-radius: 50%;
-  width: min-content; /* Adjust based on the actual size of your image or use 'auto' */
-  height:min-content; /* Adjust based on the actual size of your image or use 'auto' */
-  object-fit: cover;
+  width:25%; /* Adjust based on the actual size of your image or use 'auto' */
+  height:25%; /* Adjust based on the actual size of your image or use 'auto' */
+  /* object-fit: cover; */
   display: block; /* Ensures the image doesn't have extra space around it */
   margin: 0 auto; /* Center the image if the container is wider */
-  
+    padding-top: 10%;
+    
 }
 
 .profileText {
   color: black;
-  margin-top: 10px; /* Adjusts the space between the image and the title */
+  margin-top: 10%; /* Adjusts the space between the image and the title */
+  padding-right: 50%;
+  
 }
 
   
   .profileText h2, .profileText p {
     margin: 0; /* Keeps the text snug against the image */
   }
+  .blue{
+    color: #2aadc4;
+  }
+  .square-button {
+    width: 50px; /* Set width */
+    height: 50px; /* Set height to the same as width to make it square */
+    min-width: 50px; /* Prevent the button from becoming too small */
+    min-height: 50px;
+  }    
+.inputPass{
+    margin: 20px;
+}
+.logout-button{
+  margin: 40px;
   
+}
