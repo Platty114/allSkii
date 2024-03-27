@@ -1,0 +1,5045 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0694218,
+                    49.50475729999999
+                ]
+            },
+            "properties": {
+                "name": "Bridge Bistro",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0612936,
+                    49.5035083
+                ]
+            },
+            "properties": {
+                "name": "Lunch Box",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.06255,
+                    49.502375
+                ]
+            },
+            "properties": {
+                "name": "The Brickhouse",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.064527,
+                    49.5071838
+                ]
+            },
+            "properties": {
+                "name": "Bistro Restaurant at Park Place Lodge",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0805404,
+                    49.4981777
+                ]
+            },
+            "properties": {
+                "name": "Smitty's Family Restaurant - Fernie",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0780087,
+                    49.4871103
+                ]
+            },
+            "properties": {
+                "name": "Tandoor & Grill Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0872309,
+                    49.4631188
+                ]
+            },
+            "properties": {
+                "name": "Legends Mountain Eatery",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0632711,
+                    49.5015475
+                ]
+            },
+            "properties": {
+                "name": "Himalayan Spice Bistro",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0599234,
+                    49.5118962
+                ]
+            },
+            "properties": {
+                "name": "Chilango Mexican",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0605444,
+                    49.50429459999999
+                ]
+            },
+            "properties": {
+                "name": "The Loaf",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.2753829,
+                    49.37975309999999
+                ]
+            },
+            "properties": {
+                "name": "Jaffray Pub & Sunrise Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0617191,
+                    49.5115376
+                ]
+            },
+            "properties": {
+                "name": "Sushi Wood Fernie",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.061675,
+                    49.511648
+                ]
+            },
+            "properties": {
+                "name": "Fernie Pizza & Pasta",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0596622,
+                    49.5038305
+                ]
+            },
+            "properties": {
+                "name": "Blue Toque Gastro Diner",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0638726,
+                    49.5091478
+                ]
+            },
+            "properties": {
+                "name": "Curry Bowl",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0612936,
+                    49.5035083
+                ]
+            },
+            "properties": {
+                "name": "Lunch Box",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0694218,
+                    49.50475729999999
+                ]
+            },
+            "properties": {
+                "name": "Bridge Bistro",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0593603,
+                    49.5159619
+                ]
+            },
+            "properties": {
+                "name": "McDonald\u2019s",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0796005,
+                    49.4992171
+                ]
+            },
+            "properties": {
+                "name": "Dairy Queen Grill & Chill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0601597,
+                    49.5166615
+                ]
+            },
+            "properties": {
+                "name": "Wendy's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0596901,
+                    49.512735
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0680052,
+                    49.5055507
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.1059164,
+                    49.46346279999999
+                ]
+            },
+            "properties": {
+                "name": "Bear's Den",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0617191,
+                    49.5115376
+                ]
+            },
+            "properties": {
+                "name": "Sushi Wood Fernie",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.064527,
+                    49.5071838
+                ]
+            },
+            "properties": {
+                "name": "Bistro Restaurant at Park Place Lodge",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0602873,
+                    49.5168543
+                ]
+            },
+            "properties": {
+                "name": "barBURRITO",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0872309,
+                    49.4631188
+                ]
+            },
+            "properties": {
+                "name": "Legends Mountain Eatery",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.06255,
+                    49.502375
+                ]
+            },
+            "properties": {
+                "name": "The Brickhouse",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0599234,
+                    49.5118962
+                ]
+            },
+            "properties": {
+                "name": "Chilango Mexican",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.0679681,
+                    49.50595
+                ]
+            },
+            "properties": {
+                "name": "Graffito Pizza",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9679255,
+                    51.30016
+                ]
+            },
+            "properties": {
+                "name": "Riverhouse tavern",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9683608,
+                    51.3103296
+                ]
+            },
+            "properties": {
+                "name": "Golden Grizzly Cookhouse",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9734414,
+                    51.3115325
+                ]
+            },
+            "properties": {
+                "name": "Bryan's Golden Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9574394,
+                    51.3151886
+                ]
+            },
+            "properties": {
+                "name": "Village Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9644032,
+                    51.29850829999999
+                ]
+            },
+            "properties": {
+                "name": "Island Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.047787,
+                    51.2979072
+                ]
+            },
+            "properties": {
+                "name": "Peaks Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.961208,
+                    51.2958167
+                ]
+            },
+            "properties": {
+                "name": "Turning Point",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9728051,
+                    51.3164421
+                ]
+            },
+            "properties": {
+                "name": "Q's Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9716694,
+                    51.311097
+                ]
+            },
+            "properties": {
+                "name": "Ricky's All Day Grill - Golden",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.973865,
+                    51.3147228
+                ]
+            },
+            "properties": {
+                "name": "McDonald's",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.0785216,
+                    51.274475
+                ]
+            },
+            "properties": {
+                "name": "Eagle's Eye Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9503326,
+                    51.3025665
+                ]
+            },
+            "properties": {
+                "name": "Indian Kitchen",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.960188,
+                    51.296366
+                ]
+            },
+            "properties": {
+                "name": "The Wolf\u2019s Den",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9670229,
+                    51.3002617
+                ]
+            },
+            "properties": {
+                "name": "Red Diamond Family Restaurant & Bed & Breakfast",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9743051,
+                    51.3166036
+                ]
+            },
+            "properties": {
+                "name": "Legendz Diner",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9574394,
+                    51.3151886
+                ]
+            },
+            "properties": {
+                "name": "Village Grill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9734414,
+                    51.3115325
+                ]
+            },
+            "properties": {
+                "name": "Bryan's Golden Grill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9679255,
+                    51.30016
+                ]
+            },
+            "properties": {
+                "name": "Riverhouse tavern",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.973865,
+                    51.3147228
+                ]
+            },
+            "properties": {
+                "name": "McDonald's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.047787,
+                    51.2979072
+                ]
+            },
+            "properties": {
+                "name": "Peaks Grill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9650709,
+                    51.30063570000001
+                ]
+            },
+            "properties": {
+                "name": "Columbia River Catering Food truck",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.97238,
+                    51.31357999999999
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9683831,
+                    51.310278
+                ]
+            },
+            "properties": {
+                "name": "KFC",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9745563,
+                    51.3170505
+                ]
+            },
+            "properties": {
+                "name": "Dairy Queen Grill & Chill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9731719,
+                    51.317256
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9634155,
+                    51.29600199999999
+                ]
+            },
+            "properties": {
+                "name": "Papa Bear's Kitchen",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9644032,
+                    51.29850829999999
+                ]
+            },
+            "properties": {
+                "name": "Island Restaurant",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9728051,
+                    51.3164421
+                ]
+            },
+            "properties": {
+                "name": "Q's Restaurant",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9670229,
+                    51.3002617
+                ]
+            },
+            "properties": {
+                "name": "Red Diamond Family Restaurant & Bed & Breakfast",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9735287,
+                    51.3116063
+                ]
+            },
+            "properties": {
+                "name": "Golden Punjabi Dhaba Bar & Grill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3540096,
+                    51.0893696
+                ]
+            },
+            "properties": {
+                "name": "Rose & Crown Restaurant & Pub",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3567776,
+                    51.0955998
+                ]
+            },
+            "properties": {
+                "name": "Patrinos Steak House & Pub",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3605556,
+                    51.0894444
+                ]
+            },
+            "properties": {
+                "name": "1890 Smokehouse",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3453759,
+                    51.0874217
+                ]
+            },
+            "properties": {
+                "name": "Table Food + Drink",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3220772,
+                    51.0553833
+                ]
+            },
+            "properties": {
+                "name": "The Market Bistro",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3530577,
+                    51.0922424
+                ]
+            },
+            "properties": {
+                "name": "Thai House Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.1464031,
+                    50.9183356
+                ]
+            },
+            "properties": {
+                "name": "Cedar Room",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3629565,
+                    51.089353
+                ]
+            },
+            "properties": {
+                "name": "The Wood Restaurant & Lounge",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.346877,
+                    51.08739199999999
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3498563,
+                    51.0896222
+                ]
+            },
+            "properties": {
+                "name": "Domino's Pizza",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3488212,
+                    51.0909336
+                ]
+            },
+            "properties": {
+                "name": "The Grande Kitchen + Bar",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3398763,
+                    51.08201
+                ]
+            },
+            "properties": {
+                "name": "Bow Valley BBQ",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3274183,
+                    51.0871077
+                ]
+            },
+            "properties": {
+                "name": "Iron Goat Pub & Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.1463894,
+                    50.9183549
+                ]
+            },
+            "properties": {
+                "name": "Forte",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.355865,
+                    51.09643
+                ]
+            },
+            "properties": {
+                "name": "The Bankhead Restaurant And Lounge",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3540096,
+                    51.0893696
+                ]
+            },
+            "properties": {
+                "name": "Rose & Crown Restaurant & Pub",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3498563,
+                    51.0896222
+                ]
+            },
+            "properties": {
+                "name": "Domino's Pizza",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3453759,
+                    51.0874217
+                ]
+            },
+            "properties": {
+                "name": "Table Food + Drink",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.346877,
+                    51.08739199999999
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.354781,
+                    51.0897579
+                ]
+            },
+            "properties": {
+                "name": "The Drake Pub",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3620906,
+                    51.1026116
+                ]
+            },
+            "properties": {
+                "name": "Wendy's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3632452,
+                    51.103537
+                ]
+            },
+            "properties": {
+                "name": "McDonald\u2019s",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3574466,
+                    51.0962677
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3585814,
+                    51.089512
+                ]
+            },
+            "properties": {
+                "name": "Bella Crusta",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3570166,
+                    51.0958885
+                ]
+            },
+            "properties": {
+                "name": "Dairy Queen Grill & Chill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3469047,
+                    51.0878591
+                ]
+            },
+            "properties": {
+                "name": "Freshii",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3468542,
+                    51.0878325
+                ]
+            },
+            "properties": {
+                "name": "Edo Japan",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3567776,
+                    51.0955998
+                ]
+            },
+            "properties": {
+                "name": "Patrinos Steak House & Pub",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3596254,
+                    51.0891186
+                ]
+            },
+            "properties": {
+                "name": "Graze Food & Drink",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3468098,
+                    51.0883852
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.588609,
+                    51.1873521
+                ]
+            },
+            "properties": {
+                "name": "The Juniper Bistro",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5749635,
+                    51.1445519
+                ]
+            },
+            "properties": {
+                "name": "Sky Bistro",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5629097,
+                    51.1834398
+                ]
+            },
+            "properties": {
+                "name": "Chili's Grill & Bar",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5711892,
+                    51.1787053
+                ]
+            },
+            "properties": {
+                "name": "The Canadian Brewhouse (Banff)",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5712783,
+                    51.1764945
+                ]
+            },
+            "properties": {
+                "name": "The Maple Leaf",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5713164,
+                    51.1767201
+                ]
+            },
+            "properties": {
+                "name": "Block Kitchen + Bar",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5723473,
+                    51.1785398
+                ]
+            },
+            "properties": {
+                "name": "LUPO Italian Ristorante",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5693572,
+                    51.1806774
+                ]
+            },
+            "properties": {
+                "name": "Pacini Banff",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5716222,
+                    51.1767438
+                ]
+            },
+            "properties": {
+                "name": "Coyotes Southwestern Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5713616,
+                    51.17874459999999
+                ]
+            },
+            "properties": {
+                "name": "Popeyes Louisiana Kitchen",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.571523,
+                    51.176531
+                ]
+            },
+            "properties": {
+                "name": "The Eddie Burger + Bar",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5711079,
+                    51.1768957
+                ]
+            },
+            "properties": {
+                "name": "Melissa's MisSteak",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5703145,
+                    51.1766843
+                ]
+            },
+            "properties": {
+                "name": "Shoku Izakaya",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5706788,
+                    51.1763323
+                ]
+            },
+            "properties": {
+                "name": "Brazen",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5714364,
+                    51.1785363
+                ]
+            },
+            "properties": {
+                "name": "The Old Spaghetti Factory (Banff)",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5624054,
+                    51.1645446
+                ]
+            },
+            "properties": {
+                "name": "STOCK FOOD & DRINK",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5713323,
+                    51.17726529999999
+                ]
+            },
+            "properties": {
+                "name": "Night Owl Shawarma Donair & Convenience",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5741479,
+                    51.178748
+                ]
+            },
+            "properties": {
+                "name": "Pizza Pizza",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.570587,
+                    51.175267
+                ]
+            },
+            "properties": {
+                "name": "McDonald's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.571523,
+                    51.176531
+                ]
+            },
+            "properties": {
+                "name": "The Eddie Burger + Bar",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5715033,
+                    51.1765473
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5555359,
+                    51.185923
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5715274,
+                    51.1785252
+                ]
+            },
+            "properties": {
+                "name": "Edo Japan",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5704535,
+                    51.1766956
+                ]
+            },
+            "properties": {
+                "name": "Aardvark Pizza & Sub",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5707142,
+                    51.17547159999999
+                ]
+            },
+            "properties": {
+                "name": "Tommy's Neighbourhood Pub",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5725281,
+                    51.1780096
+                ]
+            },
+            "properties": {
+                "name": "Banff Poutine",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5711079,
+                    51.1768957
+                ]
+            },
+            "properties": {
+                "name": "Melissa's MisSteak",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5710864,
+                    51.1772733
+                ]
+            },
+            "properties": {
+                "name": "Chopstix Noodle Bar",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5711022,
+                    51.1768485
+                ]
+            },
+            "properties": {
+                "name": "BeaverTails Banff (West)",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5715759,
+                    51.1785266
+                ]
+            },
+            "properties": {
+                "name": "Banff Shawarma",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.176932,
+                    51.4261206
+                ]
+            },
+            "properties": {
+                "name": "Mountain Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.140016,
+                    51.450624
+                ]
+            },
+            "properties": {
+                "name": "Whitehorn Bistro",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.179306,
+                    51.425312
+                ]
+            },
+            "properties": {
+                "name": "Lake Louise Village Grill & Bar",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1822873,
+                    51.4286532
+                ]
+            },
+            "properties": {
+                "name": "Legends Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.2170072,
+                    51.4176367
+                ]
+            },
+            "properties": {
+                "name": "ALPINE SOCIAL",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1814736,
+                    51.4265573
+                ]
+            },
+            "properties": {
+                "name": "Post Hotel Dining Room Lake Louise",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.182619,
+                    51.428733
+                ]
+            },
+            "properties": {
+                "name": "Timberwolf Pizza & Pasta Cafe",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1879414,
+                    51.4291985
+                ]
+            },
+            "properties": {
+                "name": "Lake Louise Railway Station & Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1621474,
+                    51.4418793
+                ]
+            },
+            "properties": {
+                "name": "The Lodge of the Ten Peaks Caf\u00e9",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.2170072,
+                    51.4176367
+                ]
+            },
+            "properties": {
+                "name": "Louiza",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1620454,
+                    51.4416497
+                ]
+            },
+            "properties": {
+                "name": "Kuma Yama",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.182619,
+                    51.428733
+                ]
+            },
+            "properties": {
+                "name": "Explorer's Lounge",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.2171501,
+                    51.4170875
+                ]
+            },
+            "properties": {
+                "name": "WALLISER STUBE",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1398578,
+                    51.4506271
+                ]
+            },
+            "properties": {
+                "name": "Sawyer's Nook",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1828489,
+                    51.427809
+                ]
+            },
+            "properties": {
+                "name": "Bill Peyto's Cafe",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.176932,
+                    51.4261206
+                ]
+            },
+            "properties": {
+                "name": "Mountain Restaurant",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.179306,
+                    51.425312
+                ]
+            },
+            "properties": {
+                "name": "Lake Louise Village Grill & Bar",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1621474,
+                    51.4418793
+                ]
+            },
+            "properties": {
+                "name": "The Lodge of the Ten Peaks Caf\u00e9",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.182619,
+                    51.428733
+                ]
+            },
+            "properties": {
+                "name": "Explorer's Lounge",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.182619,
+                    51.428733
+                ]
+            },
+            "properties": {
+                "name": "Timberwolf Pizza & Pasta Cafe",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1814736,
+                    51.4265573
+                ]
+            },
+            "properties": {
+                "name": "Post Hotel Dining Room Lake Louise",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1620454,
+                    51.4416497
+                ]
+            },
+            "properties": {
+                "name": "Kuma Yama",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.2170072,
+                    51.4176367
+                ]
+            },
+            "properties": {
+                "name": "ALPINE SOCIAL",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1822873,
+                    51.4286532
+                ]
+            },
+            "properties": {
+                "name": "Legends Restaurant",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.140016,
+                    51.450624
+                ]
+            },
+            "properties": {
+                "name": "Whitehorn Bistro",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1828489,
+                    51.427809
+                ]
+            },
+            "properties": {
+                "name": "Bill Peyto's Cafe",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1795561,
+                    51.425137
+                ]
+            },
+            "properties": {
+                "name": "Laggan's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1879414,
+                    51.4291985
+                ]
+            },
+            "properties": {
+                "name": "Lake Louise Railway Station & Restaurant",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.2170072,
+                    51.4176367
+                ]
+            },
+            "properties": {
+                "name": "Louiza",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.1622201,
+                    51.4420371
+                ]
+            },
+            "properties": {
+                "name": "Slopeside Coffee Bar",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1973418,
+                    50.9986717
+                ]
+            },
+            "properties": {
+                "name": "The Last Drop Pub",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2023696,
+                    51.0011825
+                ]
+            },
+            "properties": {
+                "name": "Old School Eatery",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2183066,
+                    51.008923
+                ]
+            },
+            "properties": {
+                "name": "Denny's",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1641844,
+                    50.95791
+                ]
+            },
+            "properties": {
+                "name": "Rockford Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.216063,
+                    51.0083536
+                ]
+            },
+            "properties": {
+                "name": "Chester's Chicken",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.19631,
+                    50.9978644
+                ]
+            },
+            "properties": {
+                "name": "The Village Idiot Bar and Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1954449,
+                    50.9984532
+                ]
+            },
+            "properties": {
+                "name": "The Taco Club",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1268865,
+                    50.9691628
+                ]
+            },
+            "properties": {
+                "name": "Mackenzie Outpost",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.194305,
+                    50.9984591
+                ]
+            },
+            "properties": {
+                "name": "River City Pub & Patio",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1946621,
+                    50.9989382
+                ]
+            },
+            "properties": {
+                "name": "Chubby Funsters Kitchen and Cocktails",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.194885,
+                    50.9991676
+                ]
+            },
+            "properties": {
+                "name": "Hong Kong Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1946581,
+                    50.9985209
+                ]
+            },
+            "properties": {
+                "name": "112 Restaurant & Lounge",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1959772,
+                    50.9993138
+                ]
+            },
+            "properties": {
+                "name": "Paramjit's Kitchen",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1958883,
+                    50.9990169
+                ]
+            },
+            "properties": {
+                "name": "Quartermaster Eatery",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.217179,
+                    51.00780899999999
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.216063,
+                    51.0083536
+                ]
+            },
+            "properties": {
+                "name": "Chester's Chicken",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1973418,
+                    50.9986717
+                ]
+            },
+            "properties": {
+                "name": "The Last Drop Pub",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1976265,
+                    50.9986854
+                ]
+            },
+            "properties": {
+                "name": "WING N IT",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1268865,
+                    50.9691628
+                ]
+            },
+            "properties": {
+                "name": "Mackenzie Outpost",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2168942,
+                    51.0081534
+                ]
+            },
+            "properties": {
+                "name": "McDonald\u2019s",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.216063,
+                    51.0083536
+                ]
+            },
+            "properties": {
+                "name": "Quiznos",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2129427,
+                    51.0101064
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.217179,
+                    51.00780899999999
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1640416,
+                    50.9578962
+                ]
+            },
+            "properties": {
+                "name": "Mackenzie Common Tavern & Food Truck",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2183066,
+                    51.008923
+                ]
+            },
+            "properties": {
+                "name": "Denny's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1946621,
+                    50.9989382
+                ]
+            },
+            "properties": {
+                "name": "Chubby Funsters Kitchen and Cocktails",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2023696,
+                    51.0011825
+                ]
+            },
+            "properties": {
+                "name": "Old School Eatery",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.19631,
+                    50.9978644
+                ]
+            },
+            "properties": {
+                "name": "The Village Idiot Bar and Grill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1954449,
+                    50.9984532
+                ]
+            },
+            "properties": {
+                "name": "The Taco Club",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1641844,
+                    50.95791
+                ]
+            },
+            "properties": {
+                "name": "Rockford Grill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.2383512,
+                    50.4565415
+                ]
+            },
+            "properties": {
+                "name": "T-Bar & Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0033598,
+                    50.519794
+                ]
+            },
+            "properties": {
+                "name": "Rocky River Grill Ltd",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0273345,
+                    50.5042111
+                ]
+            },
+            "properties": {
+                "name": "Bistro Family Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0705532,
+                    50.6191635
+                ]
+            },
+            "properties": {
+                "name": "Back Country Jacks Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.2480391,
+                    50.4472465
+                ]
+            },
+            "properties": {
+                "name": "Cliffhanger Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.9935948,
+                    50.5121315
+                ]
+            },
+            "properties": {
+                "name": "Elements Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.2382808,
+                    50.4567027
+                ]
+            },
+            "properties": {
+                "name": "Alto Kitchen & Bar",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0224407,
+                    50.5150623
+                ]
+            },
+            "properties": {
+                "name": "Huckleberry's Family Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0708124,
+                    50.6195829
+                ]
+            },
+            "properties": {
+                "name": "Helna\u2019s Stube",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0051193,
+                    50.5151596
+                ]
+            },
+            "properties": {
+                "name": "McDonald's",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0283533,
+                    50.503676
+                ]
+            },
+            "properties": {
+                "name": "Birchwood Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0278763,
+                    50.5032881
+                ]
+            },
+            "properties": {
+                "name": "Begginnings Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.2048668,
+                    50.432302
+                ]
+            },
+            "properties": {
+                "name": "Summit Hut",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0250536,
+                    50.5150705
+                ]
+            },
+            "properties": {
+                "name": "Fuze",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0705977,
+                    50.6232987
+                ]
+            },
+            "properties": {
+                "name": "Fire'D Up Breakfast and Burgers",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.2383512,
+                    50.4565415
+                ]
+            },
+            "properties": {
+                "name": "T-Bar & Grill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0712802,
+                    50.62003420000001
+                ]
+            },
+            "properties": {
+                "name": "The Snack Bar by Street Avenue Food",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0051193,
+                    50.5151596
+                ]
+            },
+            "properties": {
+                "name": "McDonald's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0273345,
+                    50.5042111
+                ]
+            },
+            "properties": {
+                "name": "Bistro Family Restaurant",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0276488,
+                    50.5045987
+                ]
+            },
+            "properties": {
+                "name": "Shortcut Fries",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0250536,
+                    50.5150705
+                ]
+            },
+            "properties": {
+                "name": "Fuze",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.025119,
+                    50.514195
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0260052,
+                    50.5146617
+                ]
+            },
+            "properties": {
+                "name": "Dairy Queen",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0250417,
+                    50.5149212
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0715455,
+                    50.62286950000001
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.2480391,
+                    50.4472465
+                ]
+            },
+            "properties": {
+                "name": "Cliffhanger Restaurant",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0033598,
+                    50.519794
+                ]
+            },
+            "properties": {
+                "name": "Rocky River Grill Ltd",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.0705977,
+                    50.6232987
+                ]
+            },
+            "properties": {
+                "name": "Fire'D Up Breakfast and Burgers",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.2382808,
+                    50.4567027
+                ]
+            },
+            "properties": {
+                "name": "Alto Kitchen & Bar",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.9853154,
+                    50.47554179999999
+                ]
+            },
+            "properties": {
+                "name": "Pizza Pizza",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3540096,
+                    51.0893696
+                ]
+            },
+            "properties": {
+                "name": "Rose & Crown Restaurant & Pub",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5711079,
+                    51.1768957
+                ]
+            },
+            "properties": {
+                "name": "Melissa's MisSteak",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5721793,
+                    51.1765209
+                ]
+            },
+            "properties": {
+                "name": "Magpie & Stump",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3605556,
+                    51.0894444
+                ]
+            },
+            "properties": {
+                "name": "1890 Smokehouse",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5714364,
+                    51.1785363
+                ]
+            },
+            "properties": {
+                "name": "The Old Spaghetti Factory (Banff)",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.571523,
+                    51.176531
+                ]
+            },
+            "properties": {
+                "name": "The Eddie Burger + Bar",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.346877,
+                    51.08739199999999
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.570587,
+                    51.175267
+                ]
+            },
+            "properties": {
+                "name": "McDonald's",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5555359,
+                    51.185923
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5715033,
+                    51.1765473
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5629097,
+                    51.1834398
+                ]
+            },
+            "properties": {
+                "name": "Chili's Grill & Bar",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5712783,
+                    51.1764945
+                ]
+            },
+            "properties": {
+                "name": "The Maple Leaf",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5693572,
+                    51.1806774
+                ]
+            },
+            "properties": {
+                "name": "Pacini Banff",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5639382,
+                    51.1831878
+                ]
+            },
+            "properties": {
+                "name": "Evergreen Restaurant & Lounge",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5706136,
+                    51.17684029999999
+                ]
+            },
+            "properties": {
+                "name": "Rose & Crown",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5624054,
+                    51.1645446
+                ]
+            },
+            "properties": {
+                "name": "STOCK FOOD & DRINK",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3540096,
+                    51.0893696
+                ]
+            },
+            "properties": {
+                "name": "Rose & Crown Restaurant & Pub",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5713323,
+                    51.17726529999999
+                ]
+            },
+            "properties": {
+                "name": "Night Owl Shawarma Donair & Convenience",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.570587,
+                    51.175267
+                ]
+            },
+            "properties": {
+                "name": "McDonald's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.346877,
+                    51.08739199999999
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.571523,
+                    51.176531
+                ]
+            },
+            "properties": {
+                "name": "The Eddie Burger + Bar",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5715033,
+                    51.1765473
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5555359,
+                    51.185923
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3620906,
+                    51.1026116
+                ]
+            },
+            "properties": {
+                "name": "Wendy's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3498563,
+                    51.0896222
+                ]
+            },
+            "properties": {
+                "name": "Domino's Pizza",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3574466,
+                    51.0962677
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3453759,
+                    51.0874217
+                ]
+            },
+            "properties": {
+                "name": "Table Food + Drink",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3585814,
+                    51.089512
+                ]
+            },
+            "properties": {
+                "name": "Bella Crusta",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3570166,
+                    51.0958885
+                ]
+            },
+            "properties": {
+                "name": "Dairy Queen Grill & Chill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.354781,
+                    51.0897579
+                ]
+            },
+            "properties": {
+                "name": "The Drake Pub",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.763924,
+                    49.5171461
+                ]
+            },
+            "properties": {
+                "name": "Denny's",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7563838,
+                    49.5130579
+                ]
+            },
+            "properties": {
+                "name": "Blue Sky Family Pub and Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7624471,
+                    49.516858
+                ]
+            },
+            "properties": {
+                "name": "Family Thai Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.983332,
+                    49.68353700000001
+                ]
+            },
+            "properties": {
+                "name": "Charcoal Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.004422,
+                    49.6885282
+                ]
+            },
+            "properties": {
+                "name": "Stemwinder Bar & Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.764904,
+                    49.51562
+                ]
+            },
+            "properties": {
+                "name": "Cancun Mexican and International Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.981653,
+                    49.6724608
+                ]
+            },
+            "properties": {
+                "name": "Kimberley Kitchen",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7551964,
+                    49.5239403
+                ]
+            },
+            "properties": {
+                "name": "East Side Mario's",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7509997,
+                    49.527233
+                ]
+            },
+            "properties": {
+                "name": "abc country restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7642248,
+                    49.5153376
+                ]
+            },
+            "properties": {
+                "name": "ELLA'S",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7541636,
+                    49.5172093
+                ]
+            },
+            "properties": {
+                "name": "Pho Saigon",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7792053,
+                    49.5079879
+                ]
+            },
+            "properties": {
+                "name": "Fire & Oak",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7651489,
+                    49.5113875
+                ]
+            },
+            "properties": {
+                "name": "Lucky Star restaurant LTD",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7665849,
+                    49.51203109999999
+                ]
+            },
+            "properties": {
+                "name": "Sakura Sushi & Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.9838238,
+                    49.68676199999999
+                ]
+            },
+            "properties": {
+                "name": "Burrito Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.763924,
+                    49.5171461
+                ]
+            },
+            "properties": {
+                "name": "Denny's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7545831,
+                    49.5232028
+                ]
+            },
+            "properties": {
+                "name": "Domino's Pizza",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7624471,
+                    49.516858
+                ]
+            },
+            "properties": {
+                "name": "Family Thai Restaurant",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.748371,
+                    49.5295528
+                ]
+            },
+            "properties": {
+                "name": "Wendy's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7521625,
+                    49.5264774
+                ]
+            },
+            "properties": {
+                "name": "Arby's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.753539,
+                    49.52535049999999
+                ]
+            },
+            "properties": {
+                "name": "McDonald\u2019s",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7615026,
+                    49.5175237
+                ]
+            },
+            "properties": {
+                "name": "KFC",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.762859,
+                    49.5177195
+                ]
+            },
+            "properties": {
+                "name": "Burger King",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.754268,
+                    49.524299
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7523179,
+                    49.5262843
+                ]
+            },
+            "properties": {
+                "name": "Dairy Queen Grill & Chill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.981204,
+                    49.684284
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7563838,
+                    49.5130579
+                ]
+            },
+            "properties": {
+                "name": "Blue Sky Family Pub and Grill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7567102,
+                    49.52138249999999
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7575319,
+                    49.5217706
+                ]
+            },
+            "properties": {
+                "name": "Quesada Burritos & Tacos",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.7643469,
+                    49.511215
+                ]
+            },
+            "properties": {
+                "name": "Dash Eatery",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2733658,
+                    50.2731553
+                ]
+            },
+            "properties": {
+                "name": "Denny's",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2702391,
+                    50.2834769
+                ]
+            },
+            "properties": {
+                "name": "Bento & Sushi",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2668652,
+                    50.2624004
+                ]
+            },
+            "properties": {
+                "name": "TacoTime Vernon",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2700971,
+                    50.2636623
+                ]
+            },
+            "properties": {
+                "name": "Italian Kitchen Company",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2705825,
+                    50.2636592
+                ]
+            },
+            "properties": {
+                "name": "Los Huesos Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2752822,
+                    50.2632792
+                ]
+            },
+            "properties": {
+                "name": "Pho Sate Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.274407,
+                    50.2636692
+                ]
+            },
+            "properties": {
+                "name": "Boa-Thong Thai Food Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2711239,
+                    50.2615773
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2660329,
+                    50.28386030000001
+                ]
+            },
+            "properties": {
+                "name": "Wendy's",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2632982,
+                    50.2887041
+                ]
+            },
+            "properties": {
+                "name": "McDonalds",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2721041,
+                    50.2633089
+                ]
+            },
+            "properties": {
+                "name": "Amarin Thai Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.3088,
+                    50.2558222
+                ]
+            },
+            "properties": {
+                "name": "Lynn's Vietnamese Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2719653,
+                    50.2636597
+                ]
+            },
+            "properties": {
+                "name": "Midtown Bistro",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2718489,
+                    50.2825462
+                ]
+            },
+            "properties": {
+                "name": "Fresh Lemongrass Vietnamese Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2745115,
+                    50.27681949999999
+                ]
+            },
+            "properties": {
+                "name": "White Spot Vernon",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2733658,
+                    50.2731553
+                ]
+            },
+            "properties": {
+                "name": "Denny's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2509039,
+                    50.2602853
+                ]
+            },
+            "properties": {
+                "name": "Easthill Eatery",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2668652,
+                    50.2624004
+                ]
+            },
+            "properties": {
+                "name": "TacoTime Vernon",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2702391,
+                    50.2834769
+                ]
+            },
+            "properties": {
+                "name": "Bento & Sushi",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2636405,
+                    50.2564049
+                ]
+            },
+            "properties": {
+                "name": "Original Joe's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2754511,
+                    50.284114
+                ]
+            },
+            "properties": {
+                "name": "WINGS Vernon",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2660329,
+                    50.28386030000001
+                ]
+            },
+            "properties": {
+                "name": "Wendy's",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2711239,
+                    50.2615773
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2632982,
+                    50.2887041
+                ]
+            },
+            "properties": {
+                "name": "McDonalds",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.26699,
+                    50.26831
+                ]
+            },
+            "properties": {
+                "name": "Popeyes Louisiana Kitchen",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2709052,
+                    50.26471739999999
+                ]
+            },
+            "properties": {
+                "name": "Eatology",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2710459,
+                    50.26350979999999
+                ]
+            },
+            "properties": {
+                "name": "The Kal",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2734291,
+                    50.2615618
+                ]
+            },
+            "properties": {
+                "name": "Earls Kitchen + Bar",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2654725,
+                    50.2854234
+                ]
+            },
+            "properties": {
+                "name": "Burger King",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2682094,
+                    50.2834108
+                ]
+            },
+            "properties": {
+                "name": "Browns Socialhouse Village Green",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8851293,
+                    50.8845539
+                ]
+            },
+            "properties": {
+                "name": "Bottoms Bar & Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.9078522,
+                    50.8783798
+                ]
+            },
+            "properties": {
+                "name": "Magic Cattle Guard Diner",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.880094,
+                    50.8844654
+                ]
+            },
+            "properties": {
+                "name": "5 Forty Caf\u00e9 & Cantina",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.9093627,
+                    50.8989868
+                ]
+            },
+            "properties": {
+                "name": "Sunburst Lodge Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.6938073,
+                    50.81476019999999
+                ]
+            },
+            "properties": {
+                "name": "The Railside Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8812106,
+                    50.8842919
+                ]
+            },
+            "properties": {
+                "name": "Powder Hounds Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8820952,
+                    50.8852539
+                ]
+            },
+            "properties": {
+                "name": "Cahilty Creek Kitchen & Taproom",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8856561,
+                    50.8845135
+                ]
+            },
+            "properties": {
+                "name": "Masa's Bar & Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8843564,
+                    50.88427189999999
+                ]
+            },
+            "properties": {
+                "name": "Capones Kitchen",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.699103,
+                    50.806242
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.883507,
+                    50.884877
+                ]
+            },
+            "properties": {
+                "name": "Mantles Restaurant & Lounge",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8839342,
+                    50.8842431
+                ]
+            },
+            "properties": {
+                "name": "Servus On Creekside",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8835747,
+                    50.884377
+                ]
+            },
+            "properties": {
+                "name": "Oya Japanese Cuisine Sun Peaks",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.6893065,
+                    50.8195687
+                ]
+            },
+            "properties": {
+                "name": "U-Thi Sushi & Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.6902096,
+                    50.8132432
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.880094,
+                    50.8844654
+                ]
+            },
+            "properties": {
+                "name": "5 Forty Caf\u00e9 & Cantina",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.9078522,
+                    50.8783798
+                ]
+            },
+            "properties": {
+                "name": "Magic Cattle Guard Diner",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8851293,
+                    50.8845539
+                ]
+            },
+            "properties": {
+                "name": "Bottoms Bar & Grill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.9093627,
+                    50.8989868
+                ]
+            },
+            "properties": {
+                "name": "Sunburst Lodge Restaurant",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.6902096,
+                    50.8132432
+                ]
+            },
+            "properties": {
+                "name": "Subway",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8843564,
+                    50.88427189999999
+                ]
+            },
+            "properties": {
+                "name": "Capones Kitchen",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.699103,
+                    50.806242
+                ]
+            },
+            "properties": {
+                "name": "A&W Canada",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8883486,
+                    50.8843008
+                ]
+            },
+            "properties": {
+                "name": "The Annex",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.6904562,
+                    50.813256
+                ]
+            },
+            "properties": {
+                "name": "Silver Fox Pub",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8841612,
+                    50.8842614
+                ]
+            },
+            "properties": {
+                "name": "Mountain High Pizza",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.6938073,
+                    50.81476019999999
+                ]
+            },
+            "properties": {
+                "name": "The Railside Restaurant",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8841612,
+                    50.8842614
+                ]
+            },
+            "properties": {
+                "name": "Chez Joe Poutine",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8856561,
+                    50.8845135
+                ]
+            },
+            "properties": {
+                "name": "Masa's Bar & Grill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.883507,
+                    50.884877
+                ]
+            },
+            "properties": {
+                "name": "Mantles Restaurant & Lounge",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.6890981,
+                    50.8196869
+                ]
+            },
+            "properties": {
+                "name": "Pete's Pizza & Pasta",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9293948,
+                    49.7210344
+                ]
+            },
+            "properties": {
+                "name": "Cantina del Centro Big White",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9282991,
+                    49.7215585
+                ]
+            },
+            "properties": {
+                "name": "Black Diamond Bar & Grill",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9253751,
+                    49.7219832
+                ]
+            },
+            "properties": {
+                "name": "Bullwheel",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9262091,
+                    49.7221931
+                ]
+            },
+            "properties": {
+                "name": "The Woods Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9251118,
+                    49.7229664
+                ]
+            },
+            "properties": {
+                "name": "6\u00b0 Bistro",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.924909,
+                    49.7230622
+                ]
+            },
+            "properties": {
+                "name": "Sasquatch Sushi",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9284054,
+                    49.7218635
+                ]
+            },
+            "properties": {
+                "name": "Globe Restaurant and Bar",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9314444,
+                    49.72129899999999
+                ]
+            },
+            "properties": {
+                "name": "Fourth Ace Bar and Smokehouse",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9962895,
+                    49.7687719
+                ]
+            },
+            "properties": {
+                "name": "Swiss Bear Restaurant",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9298705,
+                    49.7216226
+                ]
+            },
+            "properties": {
+                "name": "Underground Pizza",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9962895,
+                    49.7687719
+                ]
+            },
+            "properties": {
+                "name": "Ridge Rocket Cafe",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9797074,
+                    49.7444067
+                ]
+            },
+            "properties": {
+                "name": "Westridge Warming Hut",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9214345,
+                    49.7179246
+                ]
+            },
+            "properties": {
+                "name": "Happy Valley Day Lodge",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9290174,
+                    49.7219804
+                ]
+            },
+            "properties": {
+                "name": "Real deal meat pies",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9328497,
+                    49.7163791
+                ]
+            },
+            "properties": {
+                "name": "Ridge Day Lodge, Big White",
+                "category": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9293948,
+                    49.7210344
+                ]
+            },
+            "properties": {
+                "name": "Cantina del Centro Big White",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9298705,
+                    49.7216226
+                ]
+            },
+            "properties": {
+                "name": "Underground Pizza",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9290174,
+                    49.7219804
+                ]
+            },
+            "properties": {
+                "name": "Real deal meat pies",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.924909,
+                    49.7230622
+                ]
+            },
+            "properties": {
+                "name": "Sasquatch Sushi",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9251118,
+                    49.7229664
+                ]
+            },
+            "properties": {
+                "name": "6\u00b0 Bistro",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9962895,
+                    49.7687719
+                ]
+            },
+            "properties": {
+                "name": "Swiss Bear Restaurant",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9797074,
+                    49.7444067
+                ]
+            },
+            "properties": {
+                "name": "Westridge Warming Hut",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0904236,
+                    49.8000711
+                ]
+            },
+            "properties": {
+                "name": "Stop by Oh Natural Foods",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9314444,
+                    49.72129899999999
+                ]
+            },
+            "properties": {
+                "name": "Fourth Ace Bar and Smokehouse",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9282991,
+                    49.7215585
+                ]
+            },
+            "properties": {
+                "name": "Black Diamond Bar & Grill",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9262091,
+                    49.7221931
+                ]
+            },
+            "properties": {
+                "name": "The Woods Restaurant",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9253751,
+                    49.7219832
+                ]
+            },
+            "properties": {
+                "name": "Bullwheel",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9284054,
+                    49.7218635
+                ]
+            },
+            "properties": {
+                "name": "Globe Restaurant and Bar",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9328497,
+                    49.7163791
+                ]
+            },
+            "properties": {
+                "name": "Ridge Day Lodge, Big White",
+                "category": "food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9214345,
+                    49.7179246
+                ]
+            },
+            "properties": {
+                "name": "Happy Valley Day Lodge",
+                "category": "food"
+            }
+        }
+    ]
+}

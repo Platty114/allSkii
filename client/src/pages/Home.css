@@ -17,11 +17,11 @@
 } */
 
 .content {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   
   .top {
-    height: 50vh;
+    height: 40vh;
     width: 100%;
     background-image: url('../media/Background.png'); /* Using template string syntax as a placeholder */
     background-repeat: no-repeat;
@@ -36,7 +36,7 @@
     color: white;
     font-size: 96px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    padding-top: 100%;
+    padding-top: 40%;
     font-family: 'Josefin Sans';
     font-weight: 600;
   }
@@ -164,6 +164,7 @@
     height: 180px;
     overflow-y: auto;
     box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+    scrollbar-color: #2a2a2a;
   }
 
   .Trail {
@@ -253,4 +254,305 @@
   margin-right: 20px;
   font-size: 15px;
   color: #ffffff;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+    visibility: hidden;
+
+  }
+  to {
+    transform: translateX(0);
+    visibility: visible;
+
+  }
+}
+
+.table {
+  padding-top: 5px;
+  width: 300px;
+  border-collapse: collapse;
+  height: 120px;
+  border-collapse: separate; 
+  border-spacing: 0 10px;
+}
+
+.progress-row {
+  padding-top: 10px;
+  height: 20px;
+  display: flex;
+
+}
+
+.star-rating {
+  width: 50px;
+  color: white;
+  text-align: center;
+}
+
+.progress-bar-container {
+  background-color: #656565;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 5px;
+  height: 8px;
+  width: 200px;
+}
+
+.progress-bar {
+  background-color: #ffcc00;
+  border-radius: 15px;
+  padding-right: 10px;
+  height: 8px;
+}
+
+
+.stats-review-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating {
+  color: #ffffff;
+  font-size: 50px;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
+  width: 10px; 
+  height: 10px; 
+  margin-right: 15px; 
+}
+
+.star::before {
+  content: "\2605";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+}
+
+.numbers {
+  color: #ffffff;
+  padding-top: 15px;
+  font-size: 10px;
+}
+
+.write-review {
+  width: 150px;
+  height: 40px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.review-list {
+  margin-top: 30px;
+  width: 500px;
+  height: 500px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  scrollbar-color: dark;
+}
+
+
+.reviews-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 750px;
+  height: 670px;
+  z-index: 10; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(34, 34, 34, 0.8); 
+  animation: slideRight 1s ease-out;
+}
+
+.Reviews {
+  margin-top: 10px;
+  margin-left: 22.5px;
+  margin-right: 22.5px;
+  margin-bottom: 5px;
+  height: 180px;
+  box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  display: flex;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+  background-color: #2a2a2a;
+  width: 500px;
+  height: 500px;
+  z-index: 1000; 
+  margin-left: 140px;
+  margin-top: 70px;
+  border-radius: 10px;
+}
+
+.form-menu-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-top: 1px solid white;
+  padding-top: 20px;
+}
+
+.user-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  margin-left: 5px;
+}
+
+
+.stars2 {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+.star2 {
+  position: relative;
+  display: inline-block;
+  width: 30px; 
+  height: 25px; 
+  margin-right: 35px; 
+  cursor: pointer;
+}
+
+.star2::before {
+  content: "\2605";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 50px;
+  text-shadow: 
+    -1px -1px 0 #ffffff59,
+    1px -1px 0 #ffffff59,
+    -1px 1px 0 #ffffff59,
+    1px 1px 0 #ffffff59; 
+}
+
+.star2.clicked::before {
+  color: #ffcc00;
+  text-shadow: 
+  0 0 0 #ffffff59,
+  0 0 0 #ffffff59,
+  0 0 0 #ffffff59,
+  0 0 0 #ffffff59; 
+}
+
+.user {
+  color: #ffffff;
+  padding-right: 35px;
+}
+
+.submit-button {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.close-button {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.textbox {
+  width: 305px;
+  height: 100px;
+  overflow-y: auto;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font: arial;
+  margin-bottom: 30px;
+  margin-left: 5px;
+}
+
+.input {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font: arial;
+  height: 20px;
+  width: 220px;
+}
+
+.review {
+  width: 400px;
+  height: 150px;
+  background-color: #2a2a2a;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.review-user {
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.stars3 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.star3 {
+  position: relative;
+  display: inline-block;
+  width: 5px; 
+  height: 5px; 
+  margin-right: 12px; 
+}
+
+.star3::before {
+  content: "\2605";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+}
+
+.review-comment {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  overflow-y: auto;
+  width: 360px;
+  height: 60px;
+  scrollbar-color: dark;
 }
