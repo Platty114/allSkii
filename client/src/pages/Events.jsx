@@ -21,7 +21,7 @@ function Events() {
             <Grid item xs={12} sx={{ height: '15%' }}>
               <Card variant="elevation" elevation={0} sx={{ height: '100%' }}>
                 <CardContent>
-                  
+                   {/* Integrate TopFilters component with styled "Filter By:" text */}
                   <TopFilters />
                 </CardContent>
               </Card>

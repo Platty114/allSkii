@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
         const verifySession = async () => {
             try {
                 const response = await axios.get('http://localhost:2345/verifyLogin', { withCredentials: true });
-                if (response.status === 200 && response.data.user) {
+                if (response.status === 200) {
                     setIsLoggedIn(true);
                     setUsername(response.data.user.email); // Assuming the email is used as the username, adjust if necessary
                 }
