@@ -12,7 +12,7 @@ const
         const sessionCookie = req.cookies['sessionToken'] || '';
         const jwtKey = 'ashdh3872dunqsudn2eh313';
         if (!sessionCookie) {
-            return { status: 401 }
+            return { status: 200 }
         }
         try {
             const decoded = jsonWt.verify(sessionCookie, jwtKey);
@@ -22,7 +22,7 @@ const
                 status: 200
             };
         } catch (err) {
-            return { status: 401}; 
+            return { status: 200}; 
         } 
     };
 
@@ -62,7 +62,10 @@ const
             userEmail = req.body.email === null ? "" : req.body.email, //error handling
             firstName = req.body.email === null ? "" : req.body.firstName,
             lastName = req.body.email === null ? "" : req.body.lastName;
-
+        if(!userEmail){
+            res.status(401).json({error: "invalid email"});
+            return;
+        }
         const 
             userRef = db.collection('Users').doc(userEmail);
             const doc = await userRef.get();
@@ -89,6 +92,10 @@ const
         const 
             userEmail = req.body.email === null ? "" : req.body.email, //error handling
             userPassword = req.body.password;
+        if(!userEmail){
+            res.status(401).json({error: "invalid email"});
+            return;
+        }
         const 
             userRef = db.collection('Users').doc(userEmail);
             const doc = await userRef.get();

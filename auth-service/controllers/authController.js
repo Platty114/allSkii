@@ -48,6 +48,7 @@ const
             response.status(401).send({
                 error: "Session token either incorrect or not passed"
             })
+            return
         }
         try {
             const decoded = jsonWt.verify(sessionCookie, jwtKey);
@@ -65,19 +66,27 @@ const
 
 const
     signin = async (request, response) => {
-        const {email, password} = request.body;
+        const 
+            email = request.body.email, 
+            password = request.body.password;
+        if(!email || !password){
+            response.status(401).send({
+                error: "Invalid Username or password"
+            })
+            return;
+        }
         const userRef = db.collection('Users').doc(email);
         const doc = await userRef.get();
         const expiresIn = 60 * 60 * 24 * 7 * 1000;
         if (!doc.exists) {
-            response.status(400).send({
+            response.status(401).send({
                 error: 'Username does not exist'
             })
         } else {
             const userData = doc.data();
             bcrypt.compare(password, userData.password, function (err, result) {
                 if (result === false) {
-                    response.status(400).send({
+                    response.status(401).send({
                         error: 'Invalid Password'
                     })
                 } else {
