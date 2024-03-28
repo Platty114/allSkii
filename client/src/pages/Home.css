@@ -81,6 +81,7 @@
   }
   
   .map-container-right {
+    display: flex;
     flex: 1 0 300px;
     align-items: center;
     flex-direction: column;
@@ -98,7 +99,6 @@
   .map-content-container {
     margin-top: 120px;
     margin: 40px;
-    margin-right: 40px;
     height: 571px;
     background-color: #2a2a2a;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
