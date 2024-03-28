@@ -20,7 +20,7 @@ function Events() {
   const [filterPricing, setFilterPricing] = useState(null);
 
   useEffect(() => {
-    axios.get(`https://events-service-7btvt4xvwq-pd.a.run.app/read/all`)
+    axios.get(`http://localhost:8083/read/all`)
       .then(response => {
         if (eventsData === null) {
           setEventsData(response.data);
@@ -87,7 +87,7 @@ function Events() {
             </Grid>
             <Grid item xs={12} sx={{ height: '85%' }} container spacing={2}>
 
-              <Grid item xs={4} sx={{ height: '100%' }}>
+              {/* <Grid item xs={4} sx={{ height: '100%' }}>
                 <Card variant="outlined" sx={{ height: '100%' }}>
                   <CardContent>
                     <Typography variant="h6" component="div" sx={{ mb: 2, fontWeight: 'medium' }}>
@@ -96,11 +96,11 @@ function Events() {
                     <EventList eventsData={eventsData} />
                   </CardContent>
                 </Card>
-              </Grid>
+              </Grid> */}
 
-
+          <Grid container justifyContent="center" alignItems="center" sx={{ height: '100%' }}>
               {/* // change xs = {8} if you want to use the other component commented out above */}
-              <Grid item xs={8} sx={{ height: '100%' }}> 
+              <Grid item xs={10} sx={{ height: '100%'}} > 
                 <Card variant="elevation" elevation={0} sx={{ height: '100%' }}>
                   <CardContent
                     sx={{
@@ -118,6 +118,8 @@ function Events() {
                   </CardContent>
                 </Card>
               </Grid>
+              </Grid>
+
 
             </Grid>
           </Grid>

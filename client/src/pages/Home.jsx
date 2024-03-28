@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, FormControl, InputLabel, Select, MenuItem, Button } from '@mui/material';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import ThermostatIcon from '@mui/icons-material/Thermostat';
@@ -6,7 +6,8 @@ import PersonIcon from '@mui/icons-material/Person';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import WindPowerIcon from '@mui/icons-material/WindPower';
 import FilterDramaIcon from '@mui/icons-material/FilterDrama';
-import axios from 'axios'; 
+import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
+import axios from 'axios';
 
 import "./Home.css";
 import background from '../media/Background.png';
@@ -19,29 +20,36 @@ function Home() {
   const [visibility, setVisibility] = useState('');
   const [wind, setWind] = useState('');
   const [cloudCoverage, setCloudCoverage] = useState('');
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+
+  useEffect(() => {
+    // Fetch data for the selected ski hill
+    if (selectedSkiHill) {
+      axios.get(`http://localhost:8080/${selectedSkiHill.latitude}/${selectedSkiHill.longitude}`)
+        .then((response) => {
+          const data = response.data;
+          // Update state variables with the received data
+          setSnowfall(data.lastHourSnow);
+          setTemp(data.temp);
+          setFeelsLike(data.feelsLike);
+          setVisibility(data.visibility);
+          setWind(data.wind);
+          setCloudCoverage(data.cloudCoverage);
+        })
+        .catch((error) => {
+          console.error('Error fetching data:', error);
+        });
+    }
+  }, [selectedSkiHill]);
 
   const handleSkiHillChange = (event) => {
-
     setSelectedSkiHill(event.target.value);
-
-    console.log(event.target.value.name)
-
-    // Fetch data for the selected ski hill
-    axios.get(`https://conditions-service-7btvt4xvwq-pd.a.run.app/${selectedSkiHill.latitude}/${selectedSkiHill.longitude}`)
-      .then((response) => {
-        const data = response.data;
-        // Update state variables with the received data
-        setSnowfall(data.lastHourSnow);
-        setTemp(data.temp);
-        setFeelsLike(data.feelsLike);
-        setVisibility(data.visibility);
-        setWind(data.wind);
-        setCloudCoverage(data.cloudCoverage);
-      })
-      .catch((error) => {
-        console.error('Error fetching data:', error);
-      });
   };
+
+  const navigateToTrails = () => {
+    navigate('/trails'); // Navigate to the trails page
+  };
+
 
   const skiHills = [
     { name: 'Fernie', id: 'fernie', longitude: -115.0873, latitude: 49.4627 },
@@ -59,15 +67,13 @@ function Home() {
   ];
 
   const iconList = [
-    <AcUnitIcon sx={{ fontSize: '6rem' }} />,
-    <ThermostatIcon sx={{ fontSize: '6rem' }} />,
-    <PersonIcon sx={{ fontSize: '6rem' }} />,
-    <VisibilityOffIcon sx={{ fontSize: '6rem' }} />,
-    <WindPowerIcon sx={{ fontSize: '6rem' }} />,
-    <FilterDramaIcon sx={{ fontSize: '6rem' }} />,
+    { icon: <AcUnitIcon sx={{ fontSize: '6rem' }} />, value: snowfall },
+    { icon: <ThermostatIcon sx={{ fontSize: '6rem' }} />, value: temp },
+    { icon: <PersonIcon sx={{ fontSize: '6rem' }} />, value: feelsLike },
+    { icon: <VisibilityOffIcon sx={{ fontSize: '6rem' }} />, value: visibility },
+    { icon: <WindPowerIcon sx={{ fontSize: '6rem' }} />, value: wind },
+    { icon: <FilterDramaIcon sx={{ fontSize: '6rem' }} />, value: cloudCoverage },
   ];
-
-  const textValues = [snowfall, temp, feelsLike, visibility, wind, cloudCoverage];
 
   return (
     <div className='content'>
@@ -82,26 +88,28 @@ function Home() {
           <FormControl style={{ width: '300px', marginRight: '10px' }}>
             <InputLabel id="ski-hill-label">Select Ski Hill</InputLabel>
             <Select
-            labelId="ski-hill-label"
-            id="ski-hill-select"
-            value={selectedSkiHill}
-            onChange={handleSkiHillChange}
-            style={{ height: '56px' }} 
-          >
-            {skiHills.map((skiHill) => (
-              <MenuItem key={skiHill.id} value={skiHill}>{skiHill.name}</MenuItem>
-            ))}
-          </Select>
-
+              labelId="ski-hill-label"
+              id="ski-hill-select"
+              value={selectedSkiHill}
+              onChange={handleSkiHillChange}
+              style={{ height: '56px' }}
+              renderValue={(value) => value ? value.name : 'Select Ski Hill'} // Render selected value in dropdown
+            >
+              {skiHills.map((skiHill) => (
+                <MenuItem key={skiHill.id} value={skiHill}>{skiHill.name}</MenuItem>
+              ))}
+            </Select>
           </FormControl>
-          <Button variant="outlined" style={{ height: '56px', color: '#006400', borderColor: '#006400' }}>Go - to</Button>
+          <Button variant="outlined" style={{ height: '56px', color: '#006400', borderColor: '#006400' }} onClick={navigateToTrails}>
+            Go - to
+            </Button>
         </div>
         <Box display="flex" justifyContent="center" flexDirection="column" alignItems="center" width="100%" borderRadius="5px" padding="10px" mt={2}>
           <Box display="flex" justifyContent="space-between" width="80%">
-            {iconList.map((icon, index) => (
+            {iconList.map((item, index) => (
               <div key={index} style={{ textAlign: 'center' }}>
-                {icon}
-                <p style={{ fontSize: '1.5rem' }}>{textValues[index]}</p>
+                {item.icon}
+                <p style={{ fontSize: '1.5rem' }}>{item.value}</p>
               </div>
             ))}
           </Box>
