@@ -2,6 +2,6 @@
 
 * A Repository for a in development application that will allow skiiers to find trails, conditions, and reviews through an interactive map
 
-## Tools
+PUBLIC LINK -> https://allskii-ecd4d.web.app/login
 
-- We are using React, NodeJS, and Firebase as our stack
+visit the above link to find the deployed version. You can use any browser.
