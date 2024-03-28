@@ -25,7 +25,7 @@ function Home() {
   useEffect(() => {
     // Fetch data for the selected ski hill
     if (selectedSkiHill) {
-      axios.get(`http://localhost:8080/${selectedSkiHill.latitude}/${selectedSkiHill.longitude}`)
+      axios.get(`https://conditions-service-7btvt4xvwq-pd.a.run.app/${selectedSkiHill.latitude}/${selectedSkiHill.longitude}`)
         .then((response) => {
           const data = response.data;
           // Update state variables with the received data
