@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import Trails from './pages/Trails';
-import Reviews from './pages/Reviews';
-import Blogs from './pages/Blogs';
 import Events from './pages/Events';
 import Topbar from './components/Topbar';
 import LoginValid from './pages/LoginValid';
