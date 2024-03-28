@@ -67,7 +67,7 @@ const ReviewFrom = ({ isOpen, onClose, coordinates, setReviews, setReviewAdded }
                 user,                
             };
             try {
-                const response = await fetch('http://localhost:8080/create', {
+                const response = await fetch('https://reviews-service-7btvt4xvwq-pd.a.run.app/create', {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json',

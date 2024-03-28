@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
     useEffect(() => {
         const verifySession = async () => {
             try {
-                const response = await axios.get('http://localhost:2345/verifyLogin', { withCredentials: true });
+                const response = await axios.get('https://auth-service-7btvt4xvwq-pd.a.run.app/verifyLogin', { withCredentials: true });
                 if (response.status === 200) {
                     setIsLoggedIn(true);
                     setUsername(response.data.user.email); // Assuming the email is used as the username, adjust if necessary

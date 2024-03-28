@@ -17,7 +17,7 @@ const ProfileCard = () => {
             try {
                 
                 
-                const response = await axios.put('http://localhost:8080/updatePassword', {
+                const response = await axios.put('https://profile-service-7btvt4xvwq-pd.a.run.app/updatePassword', {
                     email: username, // Assuming the email is the username, adjust if necessary
                     password: newPassword
                 });
