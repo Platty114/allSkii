@@ -9,8 +9,6 @@ const Topbar = () => {
   const links = [
     { text: 'Home', route: '/home' },
     { text: 'Trails', route: '/trails' },
-    { text: 'Reviews', route: '/reviews' },
-    { text: 'Blogs', route: '/blogs' },
     { text: 'Events', route: '/events' },
     // Add additional links as needed
   ];
